@@ -1,0 +1,970 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>RELIANCE EDUCAIVE</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"><!-- MAGINIFIC LIGHTBOX -->
+<link href="vendor/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<link href="vendor/rs-plugin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+    
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />    
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/angular.js"></script>
+<!--<script src="js/angular-ui-router.js"></script>-->
+<!--<script src="js/state.js"></script>-->
+<script src="bower_components/angular-translate/angular-translate.js"></script>     
+<script src="js/translate.js"></script>  
+<script src="js/home-controller.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/modernizr.js"></script><!-- Modernizr --> 
+       
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>     
+<script type="text/javascript" src="js/jquery.cslider.js"></script>     
+  
+  <script>
+      $(document).ready(function() {
+
+        $('.carousel[data-type="multi"] .item').each(function(){
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i=0;i<2;i++) {
+            next=next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        });
+
+      });
+    </script>    
+    
+</head>
+<body class="home" ng-app="gaeaApp" ng-controller="homeCtrl">
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	<!-- Start Site Header -->
+   
+    
+    
+	<header class="site-header">
+    	
+            <div class="row" style="margin-left:0%;margin-right:0%;margin-top:0.5%"> 
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:center; padding-top:14px;padding-bottom:13px;color:#fff;font-size:200%; border-radius:5px 0px 0px 0px;">
+                    <b>
+                       <i>CFAP</i> 
+                    </b>    
+                </div>
+                 <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4.jpg) repeat;text-align:center; padding-top:11px;padding-bottom:10px;">   
+           
+                        <marquee class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid green;font-size:120%;"> Cours d'anglais début de la prochaine session <span style="color:red"> 08 / 04 / 2017</span></marquee>        
+                </div>
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:right; padding-top:1%;padding-bottom:1%; border-radius:0px 5px 0px 0px;">
+                        <a href="#" ng-click="changeLanguage('en')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
+                         &nbsp; Read us in : <strong>English</strong>   
+                        </a>    
+                     <!--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">Français  :
+                            &nbsp;<img src="images/drapeau/fran.png" width="6.5%">
+                        </a>-->
+                </div>
+            
+            </div>
+            
+        
+       <!-- <h2>{{ 'HEADLINE' | translate }}</h2>-->
+       <!-- <p>{{ 'INTRO_TEXT' | translate }}</p>-->
+        
+        
+   
+        
+    	<div class="lower-header">
+        	<div class="container for-navi">
+             	<div class="container for-navi">
+             	<h1 class="logo" style="margin-left:0%;">
+                    <a href="" class="btn_sincrire_intro ">
+                                <img src="images/logo/logo.png" alt="" style="width:20%">
+                    </a>
+                     &nbsp;
+                    <img src="images/logo/textlogo.png" alt="" style="width:70%">
+             	</h1>
+                
+              	<!-- Main Navigation MENU-->
+              	<nav class="main-navigation">
+                  	<ul class="sf-menu">
+                        <li><a href="index.html">{{ 'home' | translate }}</a></li>
+      					<li><a href="">{{ 'institution' | translate }}</a></li>
+                          <li><a href="">{{ 'school' | translate }}</a>
+                            <ul>
+                                <li><a href="">{{ 'langue' | translate }}</a>
+                                    <ul>
+                                        <li><a href="anglais.html">{{ 'anglais' | translate }}</a></li>
+                                        <li><a href="">{{ 'francais' | translate }}</a></li>
+                                        <li><a href="">{{ 'italien' | translate }}</a></li>
+                                        <li><a href="">{{ 'allemand' | translate }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="resultats-examen.html">{{ 'informatique_menu' | translate }}</a>
+                                     <ul>
+                                        <li><a href="omo.html">{{ 'omo' | translate }}</a></li>
+                                        <li><a href="ts.html">{{ 'ts' | translate }}</a></li>
+                                        <li><a href="iag.html">{{ 'iag' | translate }}</a></li> 
+                                    </ul>
+                                </li> 
+                                <li><a href="infographie.html">{{ 'info' | translate }}</a></li>
+                                <li><a href="formation_pro.html">{{ 'professionnelle' | translate }}</a></li>                                
+                                <!--<li><a href="activite-extra-scolaire.html">{{ 'activites_extra_scolaires' | translate }}</a></li>
+                                <li><a href="">{{ 'association' | translate }}</a></li>-->
+                            </ul>
+                        </li>
+                         <li><a href="">{{ 'admission' | translate }}</a></li>
+                        <li><a href="contact2.html">{{ 'contact' | translate }}</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Menu Trigger Icon -->
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        
+	</header>
+        
+	<!-- End Site Header -->
+    <!-- Start Hero Slider -->
+    
+    
+    <!--<div class="container">-->
+    <div style="margin-left:4%;margin-right:4%;margin-top:4%">
+    <div class="hero-slider">
+      <div class="slider-rev-cont">
+          <div class="tp-banner-container">
+            <div class="tp-limited">
+              <ul >
+                <!-- SLIDE  -->
+                <li data-delay="5000" data-masterspeed="600" data-slotamount="7" data-transition="fade"> 
+                  <!-- MAIN IMAGE --> 
+                  <img src="{{slide1}}" alt="">  
+                  
+					<div class="tp-caption text-align-center h2 sfr whiter tp-resizeme"
+						data-x="center"
+						data-hoffset="0"
+						data-y="center"
+						data-voffset="55"
+						data-speed="600"
+						data-start="1800"
+						data-easing="Back.easeInOut"1
+						data-endspeed="300">
+                         {{'big_text_slide1' | translate}}<br><h3 style="color:#fff;">{{'smallTextSlide1' | translate}} </h3> 
+					</div>
+                  <!-- LAYER NR. 4 -->
+					<div class="tp-caption fade whiter tp-resizeme"
+						data-x="center"
+						data-hoffset="0"
+						data-y="center"
+						data-voffset="155"
+						data-speed="1000"
+						data-start="2800"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-delay="5000" data-masterspeed="600" data-slotamount="7" data-transition="fade"> 
+                  <!-- MAIN IMAGE --> 
+                  <img src="{{slide2}}" alt=""> 
+                  <!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr whiter h4 tp-resizeme"
+						data-x="right"
+						data-hoffset="-15"
+						data-y="center"
+						data-voffset="-80"
+						data-speed="1000"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'big_text_slide2' | translate}}
+					</div>
+                  <!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr whiter h2 tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="-40"
+						data-speed="1000"
+						data-start="600"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'small_text_slide2' | translate}}
+					</div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption customin whiter customout tp-resizeme"
+                        data-x="right"
+                          data-hoffset="-20"
+                        data-y="center"
+                          data-voffset="20"
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:100% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    
+                        data-start="1100"
+                        data-speed="600"
+                        data-easing="Linear.easeNone"
+                        data-endspeed="600"
+                        data-endeasing="Linear.easeNone"
+                        ><hr class="md">
+                    </div>
+                    <!-- LAYER NR. 4 -->
+					<div class="tp-caption sfr whiter para text-align-right tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="80"
+						data-speed="1400"
+						data-start="1000"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                  <!-- LAYER NR. 5 -->
+					<div class="tp-caption sfr whiter tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="160"
+						data-speed="1000"
+						data-start="1800"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-delay="5000" data-masterspeed="600" data-slotamount="7" data-transition="fade"> 
+                  <!-- MAIN IMAGE --> 
+                  <img src="{{slide3}}" alt="">
+                  <!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr whiter h4 tp-resizeme"
+						data-x="right"
+						data-hoffset="-15"
+						data-y="center"
+						data-voffset="-80"
+						data-speed="1000"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'big_text_slide3' | translate}}
+					</div>
+                  <!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr whiter h2 tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="-40"
+						data-speed="1000"
+						data-start="600"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'small_text_slide3' | translate}}
+					</div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption customin whiter customout tp-resizeme"
+                        data-x="right"
+                          data-hoffset="-20"
+                        data-y="center"
+                          data-voffset="20"
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:100% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    
+                        data-start="1100"
+                        data-speed="600"
+                        data-easing="Linear.easeNone"
+                        data-endspeed="600"
+                        data-endeasing="Linear.easeNone"
+                        ><hr class="md">
+                    </div>
+                    <!-- LAYER NR. 4 -->
+					<div class="tp-caption sfr whiter para text-align-right tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="80"
+						data-speed="1400"
+						data-start="1000"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                  <!-- LAYER NR. 5 -->
+					<div class="tp-caption sfr whiter tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="160"
+						data-speed="1000"
+						data-start="1800"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                </li>
+                            <!-- SLIDE  -->
+                <li data-delay="5000" data-masterspeed="600" data-slotamount="7" data-transition="fade"> 
+                  <!-- MAIN IMAGE --> 
+                  <img src="{{slide4}}" alt="">
+                  <!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr whiter h4 tp-resizeme"
+						data-x="right"
+						data-hoffset="-15"
+						data-y="center"
+						data-voffset="-80"
+						data-speed="1000"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'big_text_slide3' | translate}}
+					</div>
+                  <!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr whiter h2 tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="-40"
+						data-speed="1000"
+						data-start="600"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'small_text_slide3' | translate}}
+					</div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption customin whiter customout tp-resizeme"
+                        data-x="right"
+                          data-hoffset="-20"
+                        data-y="center"
+                          data-voffset="20"
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:100% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    
+                        data-start="1100"
+                        data-speed="600"
+                        data-easing="Linear.easeNone"
+                        data-endspeed="600"
+                        data-endeasing="Linear.easeNone"
+                        ><hr class="md">
+                    </div>
+                    <!-- LAYER NR. 4 -->
+					<div class="tp-caption sfr whiter para text-align-right tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="80"
+						data-speed="1400"
+						data-start="1000"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                  <!-- LAYER NR. 5 -->
+					<div class="tp-caption sfr whiter tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="160"
+						data-speed="1000"
+						data-start="1800"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                </li>
+                            <!-- SLIDE  -->
+                <li data-delay="5000" data-masterspeed="600" data-slotamount="7" data-transition="fade"> 
+                  <!-- MAIN IMAGE --> 
+                  <img src="{{slide5}}" alt="">
+                  <!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr whiter h4 tp-resizeme"
+						data-x="right"
+						data-hoffset="-15"
+						data-y="center"
+						data-voffset="-80"
+						data-speed="1000"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'big_text_slide3' | translate}}
+					</div>
+                  <!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr whiter h2 tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="-40"
+						data-speed="1000"
+						data-start="600"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'small_text_slide3' | translate}}
+					</div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption customin whiter customout tp-resizeme"
+                        data-x="right"
+                          data-hoffset="-20"
+                        data-y="center"
+                          data-voffset="20"
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:100% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    
+                        data-start="1100"
+                        data-speed="600"
+                        data-easing="Linear.easeNone"
+                        data-endspeed="600"
+                        data-endeasing="Linear.easeNone"
+                        ><hr class="md">
+                    </div>
+                    <!-- LAYER NR. 4 -->
+					<div class="tp-caption sfr whiter para text-align-right tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="80"
+						data-speed="1400"
+						data-start="1000"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                  <!-- LAYER NR. 5 -->
+					<div class="tp-caption sfr whiter tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="160"
+						data-speed="1000"
+						data-start="1800"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                </li>
+                            <!-- SLIDE  -->
+                <li data-delay="5000" data-masterspeed="600" data-slotamount="7" data-transition="fade"> 
+                  <!-- MAIN IMAGE --> 
+                  <img src="{{slide6}}" alt="">
+                  <!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr whiter h4 tp-resizeme"
+						data-x="right"
+						data-hoffset="-15"
+						data-y="center"
+						data-voffset="-80"
+						data-speed="1000"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'big_text_slide3' | translate}}
+					</div>
+                  <!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr whiter h2 tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="-40"
+						data-speed="1000"
+						data-start="600"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+                        {{'small_text_slide3' | translate}}
+					</div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption customin whiter customout tp-resizeme"
+                        data-x="right"
+                          data-hoffset="-20"
+                        data-y="center"
+                          data-voffset="20"
+                        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:100% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    
+                        data-start="1100"
+                        data-speed="600"
+                        data-easing="Linear.easeNone"
+                        data-endspeed="600"
+                        data-endeasing="Linear.easeNone"
+                        ><hr class="md">
+                    </div>
+                    <!-- LAYER NR. 4 -->
+					<div class="tp-caption sfr whiter para text-align-right tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="80"
+						data-speed="1400"
+						data-start="1000"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                  <!-- LAYER NR. 5 -->
+					<div class="tp-caption sfr whiter tp-resizeme"
+						data-x="right"
+						data-hoffset="-20"
+						data-y="center"
+						data-voffset="160"
+						data-speed="1000"
+						data-start="1800"
+						data-easing="Back.easeInOut"
+						data-endspeed="300">
+					</div>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+   
+    
+  
+    
+    <!-- End Hero Slider -->
+    <div class="double-border"></div>
+    <!-- Start Lead Block -->
+    <div class="lead-block">
+    	<div class="container">
+            <div class="tabs">
+                <div class="nav-tabs-bar">
+                    <ul class="nav nav-tabs">
+                        <li class="active"> <a data-toggle="tab" href="#sampletab1">{{ 'presentation' | translate }}</a> </li>
+                        <!--<li> <a data-toggle="tab" href="#sampletab2">Why you should join us</a> </li>-->
+                    </ul>
+                 
+                </div>
+                <div class="tab-content">
+                    <div id="sampletab1" class="tab-pane active">
+                        <div class="row">
+                        	<div class="col-md-7 col-sm-7" style="text-align:justify;">
+                        		<p style="color:forestgreen;font-size:130%;text-align:center;"><strong>{{ 'centre_formation' | translate }} <span style="color:crimson">( CFAP )</span></strong></p>
+                           
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                        <img src="images/homeSlide/Image29.png" width="90%" class="img-thumbnail post-thumb">
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                <p>{{ 'texte1' | translate }}<strong style="color:#4CADC5"> {{ 'complexe_scolaire_minus' | translate }} <span style="color:forestgreen">Réliance Éducative</span></strong>, {{ 'texte2' | translate }}</p>
+
+<p>{{ 'texte3' | translate }}</p>
+                                    </div> 
+                                </div>
+                                
+                                
+                                
+                                <p>{{ 'texte4' | translate }} <strong style="color:#4CADC5"> {{ 'initiation' | translate }}. </strong>{{ 'texte5' | translate }} </p>                               
+
+                                <p style="font-size:125%;color:#4CADC5;">{{ 'reussite_epanouissement_mérite' | translate }}</p>
+                                
+                                
+{{ 'texte6' | translate }} <strong style="color:#4CADC5"> {{ 'complexe_scolaire_minus' | translate }} la <span style="color:forestgreen">Réliance Éducative</span></strong>, {{'texte7' | translate}} </p>
+
+                            <p style="color:#4CADC5">{{ 'compose_le' | translate }} <span style="color:crimson"> 675 68 67 26<span style="color:#4CADC5"> / </span>697 80 50 36<span style="color:#4CADC5"> / </span>677 32 28 71</span> {{ 'pour_nous_joindre' | translate }}.</p>
+
+<p>{{ 'texte8' | translate }}</p>
+
+
+                                <hr class="md"><div class="clearfix"></div>
+                                <!--<a href="#" class="btn btn-lg btn-primary"><i class="fa fa-cloud-download"></i> Download Brochure</a>-->
+                            </div>
+                            <div class="col-md-5 col-sm-5" style="text-align:center;">               
+                                <!--<iframe width="70%" height="100%" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/x6w1eKP0_ls?&autoplay=1&replay&loop=1">
+                                </iframe>-->
+                                
+                                </br> </br>
+                                <img src="images/monte7.png" width="90%" class="img-thumbnail post-thumb">
+                                </br> </br>
+                                <img src="images/homeSlide/2.JPG" width="90%" class="img-thumbnail post-thumb">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sampletab2" class="tab-pane">
+                    	<div class="row">
+                        	<div class="col-md-4 col-sm-4">
+                            	<div class="icon-block"><span class="icon label-info"><i class="fa fa-globe"></i></span>
+                               	<h2>To make the planet lively{{ 'texte8' | translate }}</h2>
+                        		<p>{{ 'texte8' | translate }}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
+                               	</div>
+                            </div>
+                        	<div class="col-md-4 col-sm-4">
+                            	<div class="icon-block"><span class="icon label-warning"><i class="fa fa-umbrella"></i></span>
+                               	<h2>To save the Rain Water{{ 'texte8' | translate }}</h2>
+                        		<p>{{ 'texte8' | translate }}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
+                               	</div>
+                            </div>
+                        	<div class="col-md-4 col-sm-4">
+                            	<div class="icon-block"><span class="icon label-success"><i class="fa fa-tree"></i></span>
+                               	<h2>To make Forests Greener{{ 'texte8' | translate }}</h2>
+                        		<p>{{ 'texte8' | translate }}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
+                               	</div>
+                            </div>
+                            <div class="text-align-center">
+                            	<div class="spacer-20"></div>
+                            	<a href="#" class="btn btn-primary btn-lg secondary-color-bg">Join now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Lead Block -->
+  	<!-- Start Content -->
+  	<div class="main" role="main">
+    	<div id="content" class="content full">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-8 border-col">
+                        <!-- Latest Posts -->
+                        <div class="latest-posts">
+                            <h3 class="title" style="color:forestgreen"><i class="fa fa-folder"></i> {{ 'apprendre_grandir' | translate }}</h3>
+                            <ul class="posts-listing">
+                                
+                                	<li class="post-list-item format-standard">
+                                	<div class="row">
+                                        <div class="col-md-5 col-sm-6">
+                                			<span><img src="images/homeSlide/Image21.png" alt="" class="img-thumbnail post-thumb"></span>
+                                        </div>
+                                    	<div class="col-md-7 col-sm-6">
+                                			<h3 class="post-title"><a href="blog-post.html" style="color:forestgreen">{{ 'salle_cours' | translate }}</a></h3>
+                                    		<!--<span class="post-time meta-data">Sun 17th July, 14</span>-->
+                                    		<p class="post-excerpt">{{ 'enfant_precoce_text' | translate }}</p>
+                                       	</div>
+                                   	</div>
+                                </li>
+                                	<li class="post-list-item format-standard">
+                                	<div class="row">
+                                        <div class="col-md-5 col-sm-6" data-appear-animation="fadeInLeft" data-appear-animation-delay="1">
+                                			<span><img src="images/homeSlide/Image19.png" alt="" class="img-thumbnail post-thumb"></span>
+                                        </div>
+                                    	<div class="col-md-7 col-sm-6" data-appear-animation="fadeInLeft" data-appear-animation-delay="1">
+                                			<h3 class="post-title"><a href="blog-post.html"style="color:forestgreen">{{ 'enseignement_bilingue' | translate }}</a></h3>
+                                    		<!--<span class="post-time meta-data">Wed 20th July, 14</span>-->
+                                    		<p class="post-excerpt">{{ 'enseignement_bilingue_text' | translate }}</p>
+                                       	</div>
+                                   	</div>
+                                </li>
+                            </ul>
+                        </div>
+                        </br>
+                  	</div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!-- Sidebar -->
+                    <div class="col-md-4 sidebar right-sidebar">
+                    	<div class="widget sidebar-widget upcoming-events-widget">
+                            <h3 class="title widgettitle" style="color:forestgreen"><i class="fa fa-calendar"></i> {{ 'evenement_a_venir' | translate }}</h3>
+                            <ul class="upcoming-events">
+                            	<li data-appear-animation="fadeInRight" data-appear-animation-delay="1">
+                                	<img src="images/ecole2.gif" alt="" class="img-thumbnail event-thumb">
+                                    <span class="event-date">
+                                    	<span class="day">03</span>
+                                        <span class="monthyear">{{ 'evenement_a_venir_date1' | translate }}</span>
+                                   	</span>
+                                    <div class="event-excerpt">
+                                        <div class="event-cats meta-data"><a href="event-grid.html">{{ 'evenement_a_venir_text1' | translate }}</a></div>
+                                    	<h5 class="event-title"><a href="single-event.html">{{ 'evenement_a_venir_text1_2' | translate }}</a></h5>
+                                    	<p class="event-location">{{ 'evenement_a_venir_date1_2' | translate }} </p>
+                                    </div>
+                               	</li>
+                            	<li data-appear-animation="fadeInRight" data-appear-animation-delay="1">
+                                	<img src="images/ang.gif" alt="" class="img-thumbnail event-thumb">
+                                    <span class="event-date">
+                                    	<span class="day">20</span>
+                                        <span class="monthyear">{{ 'evenement_a_venir_date2' | translate }}</span>
+                                   	</span>
+                                    <div class="event-excerpt">
+                                        <div class="event-cats meta-data"><a href="event-grid.html">{{ 'evenement_a_venir_text2' | translate }}</a></div>
+                                    	<h5 class="event-title"><a href="single-event.html">{{ 'evenement_a_venir_text2_2' | translate }}</a></h5>
+                                    	<p class="event-location"> {{ 'evenement_a_venir_date2_2' | translate }}</p>
+                                    </div>
+                               	</li>
+                            	<li data-appear-animation="fadeInRight" data-appear-animation-delay="1">
+                                	<img src="images/ecole2.gif" alt="" class="img-thumbnail event-thumb">
+                                    <span class="event-date">
+                                    	<span class="day">21</span>
+                                        <span class="monthyear">{{ 'evenement_a_venir_date3' | translate }}</span>
+                                   	</span>
+                                    <div class="event-excerpt">
+                                        <div class="event-cats meta-data"><a href="event-grid.html">{{ 'evenement_a_venir_text3' | translate }}</a></div>
+                                    	<h5 class="event-title"><a href="single-event.html">{{ 'evenement_a_venir_text3_2' | translate }}</a></h5>
+                                    	<p class="event-location">{{ 'evenement_a_venir_date3_2' | translate }}</p>
+                                    </div>
+                               	</li>
+                            </ul>
+                            <div class="upcoming-events-footer">
+                            	<hr class="sm">
+                            </div>
+                        </div>
+                        
+                        <span style="font-size:120%;color:crimson";>Fiche de renseignements</span>
+                        <div class="row" style="margin:2%;">
+                            <div class="col-md-5 col-sm-12 col-xs-12" style="background:#e8e8e8;text-align:center;border-radius:10px;">
+                                <a href="Anglais_pdf.pdf" title="Anglais">        
+                                    <p><img src="images/pdf.png" width="50%"></p>
+                                    <span style="font-size:120%;color:#4CADC5";>Anglais</span> 
+                                </a>  
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                            </div>
+                            <div class="col-md-5 col-sm-12 col-xs-12" style="background:#e8e8e8;text-align:center;border-radius:10px;">
+                                <a href="Informatique_pdf.pdf" title="Informatique">        
+                                    <p><img src="images/pdf.png" width="50%"></p>
+                                    <span style="font-size:120%;color:#4CADC5";>Informatique</span> 
+                                </a>
+                            </div> 
+                        </div>
+
+                    </div>
+              	</div>
+          	</div>
+        </div>
+   	</div>
+</br></br></br>
+    </div>
+    <!-- Start Featured Projects -->
+<div style="margin-left:7%;margin-right:7%;">
+    <div class="featured-projects">
+    	<div class="container">
+        	<div class="row"> 
+            	<div class="col-md-4 col-sm-4 format-standard">
+                	<span class="featured-project-block">
+                    	<img src="images/homeSlide/17.jpg" alt="" class="featured-image">
+                        <span class="project-overlay">
+                        	<span class="project-title">{{ 'text_image_accueil_bas1' | translate }}</span>
+                        	<span class="project-cat">CFAP</span>
+                        </span>
+                    </span>
+                </div>
+            	<div class="col-md-4 col-sm-4 format-standard">
+                	<span class="featured-project-block">
+                    	<img src="images/homeSlide/Image23.png" alt="" class="featured-image">
+                        <span class="project-overlay">
+                        	<span class="project-title">{{ 'text_image_accueil_bas2' | translate }}</span>
+                        	<span class="project-cat">CFAP</span>
+                        </span>
+                    </span>
+                </div>
+            	<div class="col-md-4 col-sm-4 format-standard">
+                	<span class="featured-project-block">
+                    	<img src="images/homeSlide/9.JPG" alt="" class="featured">
+                        <span class="project-overlay">
+                        	<span class="project-title">{{ 'text_image_accueil_bas3' | translate }}</span>
+                        	<span class="project-cat">CFAP</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</br></br></br>
+
+
+
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-5 col-sm-12 col-xs-12">
+       <img src="images/homeSlide/Image1.png" width="100%">
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12" style="text-align:center;padding-top:0.5%;">
+       <span style="padding-top:-1%;" class="btn_sincrire_intro "><img src="images/logo/logo.png" width="23%"></span>
+       <span style="padding-top:2%;"><img src="images/homeSlide/cle.gif" width="50%"></span>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12" style="text-align:center;padding-top:1%;">
+       <img src="images/homeSlide/Image2.png" width="150%">
+    </div>
+</div>
+
+
+</br></br>
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+       <span style="color:crimson;font-size:150%;">
+           Apprendre un métier et obtenir le <span style="color:forestgreen">DQP (Diplôme de qualification professionnelle)</span>
+        </span>
+    </div>
+</div>
+</br>
+<div class="row" style="background:#e8e8e8;margin-left:7%;margin-right:7%;padding-top:1%;padding-bottom:1%;border-radius:5px;">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;">
+           <a href="formation_pro.html" style="padding:3%;color:#fff;">Secrétariat bureautique bilingue</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Secrétariat comptable</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Informatique appliquée à la gestion</a> 
+        </div>
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12">
+           <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+           <a href="formation_pro.html" style="padding:3%;color:#fff;">Graphisme de production</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Maintenance des systèmes informatiques</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Réseaux informatique</a> 
+        </div>
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12">
+           <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+               <a href="formation_pro.html" style="padding:3%;color:#fff;">Électricité</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Maintenance électromécanique</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html/#chaudronerie" style="padding:3%;color:#fff;">Chaudronnerie</a> 
+        </div>
+    </div>
+</div>
+
+
+
+</br></b></br>
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+       <span style="color:crimson;font-size:110%;">
+        <i>Quelques liens utiles :</i>   
+        </span>
+    </div>
+</div>
+<div class="row" style="background:#e8e8e8;margin-left:7%;margin-right:7%;padding-top:1%;padding-bottom:1%;border-radius:5px;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+           <!--<div class="col-md-12 text-center"><h3>Product Carousel</h3></div>-->
+      <div class="col-md-12" style="margin-top: 1%; margin-bottom: 1%;">
+        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="5000" id="myCarousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.editions2015.com/cameroun/cartes.php"><img src="images/homeSlide2/drapeau.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="https://www.prc.cm/"><img src="images/homeSlide2/pr.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.spm.gov.cm/"><img src="images/homeSlide2/immeblEtoile.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minefop.cm/"><img src="images/homeSlide2/minefop5.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minresi.cm/"><img src="images/homeSlide2/minresi.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minesup.gov.cm/"><img src="images/homeSlide2/inivers.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minesec.cm/"><img src="images/homeSlide2/minesec2.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minedub.cm/"><img src="images/homeSlide2/minedub5.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minfopra.gov.cm/"><img src="images/homeSlide2/minefopra2.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.fnecm.org/"><img src="images/homeSlide2/fne.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            
+            </div>
+      </div>
+        </div>
+    </div>
+</div>
+
+</br></br></br></br>
+
+    <div class="row" style="font-size:120%;background-image:url(images/patterns/back.jpg);border-radius:0px;color:#fff;text-align:center;height:25px;">
+          <div class="col-md-12 col-sm-12 col-xs-12 ">  
+              <span style="font-size:120%;">Le CFAP est situé à " Entrée Laïc " face pharmacie PK8 | Tél : 6 77 78 89 17</span> 
+          </div>
+    </div>
+
+
+    <footer class="site-footer site-bottom-footer" style="text-align:center;">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                	<p>&copy; {{ 'dev1' | translate }} MEKE Béranger | mekebranger@yahoo.fr | (+237) 670 06 38 58 | {{ 'dev2' | translate }}</p>
+                </div>
+            	
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer --> 
+</div>
+
+
+
+
+
+
+
+
+
+<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>--> <!-- Jquery Library Call -->
+<script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="js/revolution-slider-init.js"></script> <!-- Revolutions Slider Intialization --> 
+<script src="vendor/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
+<script src="js/stat.js"></script>     
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>RELIANCE EDUCAIVE</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"><!-- MAGINIFIC LIGHTBOX -->
+<link href="vendor/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<link href="vendor/rs-plugin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+    
+    
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />  
+    
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/angular.js"></script>
+<!--<script src="js/angular-ui-router.js"></script>-->
+<!--<script src="js/state.js"></script>-->
+<script src="bower_components/angular-translate/angular-translate.js"></script>     
+<script src="js/translate.js"></script>  
+<script src="js/home-controller.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/modernizr.js"></script><!-- Modernizr -->    
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>     
+<script type="text/javascript" src="js/jquery.cslider.js"></script>     
+     
+    
+    
+    <script>
+      $(document).ready(function() {
+
+        $('.carousel[data-type="multi"] .item').each(function(){
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i=0;i<2;i++) {
+            next=next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        });
+
+      });
+    </script>  
+    
+    
+    
+</head>
+<body class="home" ng-app="gaeaApp" ng-controller="homeCtrl">
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	<!-- Start Site Header -->
+   
+		<header class="site-header">
+    	
+            <div class="row" style="margin-left:0%;margin-right:0%;margin-top:0.5%"> 
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:center; padding-top:14px;padding-bottom:13px;color:#fff;font-size:200%; border-radius:5px 0px 0px 0px;">
+                    <b>
+                       <i>CFAP</i> 
+                    </b>    
+                </div>
+                 <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4.jpg) repeat;text-align:center; padding-top:11px;padding-bottom:10px;">   
+           
+                        <marquee class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid green;font-size:120%;"> Cours d'anglais début de la prochaine session <span style="color:red"> 08 / 04 / 2017</span></marquee>        
+                </div>
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:right; padding-top:1%;padding-bottom:1%; border-radius:0px 5px 0px 0px;">
+                        <a href="#" ng-click="changeLanguage('en')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
+                         &nbsp; Read us in : <strong>English</strong>   
+                        </a>    
+                     <!--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">Français  :
+                            &nbsp;<img src="images/drapeau/fran.png" width="6.5%">
+                        </a>-->
+                </div>
+            
+            </div>
+            
+        
+       <!-- <h2>{{ 'HEADLINE' | translate }}</h2>-->
+       <!-- <p>{{ 'INTRO_TEXT' | translate }}</p>-->
+        
+        
+   
+        
+    	<div class="lower-header">
+        	<div class="container for-navi">
+             	<div class="container for-navi">
+             	<h1 class="logo" style="margin-left:0%;">
+                    <a href="" class="btn_sincrire_intro ">
+                                <img src="images/logo/logo.png" alt="" style="width:20%">
+                    </a>
+                     &nbsp;
+                    <img src="images/logo/textlogo.png" alt="" style="width:70%">
+             	</h1>
+                
+              	<!-- Main Navigation MENU-->
+              	<nav class="main-navigation">
+                  	<ul class="sf-menu">
+                        <li><a href="index.html">{{ 'home' | translate }}</a></li>
+      					<li><a href="">{{ 'institution' | translate }}</a></li>
+                          <li><a href="">{{ 'school' | translate }}</a>
+                            <ul>
+                                <li><a href="">{{ 'langue' | translate }}</a>
+                                    <ul>
+                                        <li><a href="anglais.html">{{ 'anglais' | translate }}</a></li>
+                                        <li><a href="">{{ 'francais' | translate }}</a></li>
+                                        <li><a href="">{{ 'italien' | translate }}</a></li>
+                                        <li><a href="">{{ 'allemand' | translate }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="resultats-examen.html">{{ 'informatique_menu' | translate }}</a>
+                                     <ul>
+                                        <li><a href="omo.html">{{ 'omo' | translate }}</a></li>
+                                        <li><a href="ts.html">{{ 'ts' | translate }}</a></li>
+                                        <li><a href="iag.html">{{ 'iag' | translate }}</a></li> 
+                                    </ul>
+                                </li> 
+                                <li><a href="infographie.html">{{ 'info' | translate }}</a></li>
+                                <li><a href="formation_pro.html">{{ 'professionnelle' | translate }}</a></li>                                
+                                <!--<li><a href="activite-extra-scolaire.html">{{ 'activites_extra_scolaires' | translate }}</a></li>
+                                <li><a href="">{{ 'association' | translate }}</a></li>-->
+                            </ul>
+                        </li>
+                         <li><a href="">{{ 'admission' | translate }}</a></li>
+                        <li><a href="contact2.html">{{ 'contact' | translate }}</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Menu Trigger Icon -->
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        
+	</header>
+        
+	<!-- End Site Header -->
+    <!-- Start Hero Slider -->
+    
+    
+    
+    
+    	<div class="main" role="main" style="margin-top:15%">
+    	<div id="content" class="content full">
+    		<div style="margin-left:5.5%;margin-right:5.5%;">
+                
+                
+                
+                
+                
+<div class="double-border"></div>
+    <!-- Secondary Header -->
+    <div class="secondary-bar">
+    	<div class="container">
+        	<div class="row" style="text-align:center;">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8" style="color:forestgreen;font-size:130%;">
+                           Infographie 2D
+                        </div>
+                        <div class="col-md-2">
+                    </div>
+              	</div>    
+            </div>
+        </div>
+               
+                
+        
+                
+    </br>           
+                
+           
+                
+    
+                
+</br>             
+  <div class="row" style="margin-left:-0.5%;margin-right:-0.5%;">
+        <div class="col-md-9 col-sm-12 col-xs-12" >
+     
+  <div class="row">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+         <img src="images/infographie.png" width="65%">
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <img src="images/infographie3.jpg" width="60%">
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12" style="text-align:center;">
+         <img src="images/infographie.gif" width="100%">
+    </div>
+</div>            
+                      
+<div  style="font-size:110%;">            
+   <div class="row">
+       <div class="col-md-12 col-sm-12 col-xs-12" style="background:#F7F7F7;border-radius:10px;margin:1%;">
+           
+           <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-top:2%">
+                     <img src="images/homeSlide/omo.png" style="border-radius:12px;" width="100%"> 
+                </div>
+               
+               
+                <div class="col-md-8 col-sm-8 col-xs-8" style="padding-top:1%">
+                    
+<h3 itemprop="name"> <span style="color:crimson">L'infographiste 2D...</span> </h3>
+
+<div class="row" style="text-align:justify;"> 
+<div class="col-md-12 col-sm-12 col-xs-12">    
+<p>   
+<strong><span style="color:#009900">Que fait-il ?</span></strong>
+</p>
+L'infographiste 2D participe à la conception des calendriers, de billets de mariages, des affiches publicitaires, des banderolles, des bulletins scolaires, de logo, de livres...
+</br></br>    
+<p>   
+<strong><span style="color:#009900">Où exerce-t-il ?</span></strong>
+</p>
+Les débouchés sont nombreux : les services de communication d’entreprises, les agences de pub, les sociétés de commerce en ligne, les maisons d’édition, le secteur de la presse, les jeux en ligne, mais aussi le cinéma et la télévision, l’animation…  Recrutent également ce genre de profil.                   
+ </div>              
+    </div> 
+    </div> 
+        </div>
+           </br>
+  
+       
+   <table class="table table-bordered" style="text-align:center; border-bottom:forestgreen solid 4px">
+  <thead>
+     <tr>
+      <th colspan="6" style="text-align:center;color:forestgreen;font-size:130%"><i>Contenu de la formation :</i></th>
+    </tr>  
+  </thead>
+</table>    
+ <div class="row">
+     <div class="col-md-4 col-sm-12 col-xs-12"  style="color:forestgreen;">
+                <p>- Informatique de base</p>
+                <p>- Service Internet</p> 
+                <p>- ADOBE PHOTOSHOP</p>     
+                   
+                
+     </div>
+     <div class="col-md-4 col-sm-12 col-xs-12" style="color:forestgreen;">
+               
+              <p>- ADOBE ILLUSTRATOR</p>
+              <p>- QUARKYPRESS</p>     
+     </div>
+     <div class="col-md-4 col-sm-12 col-xs-12" style="color:forestgreen;">
+              <img src="images/infographie.jpg" width="100%" style="border-radius:0px;">    
+     </div>
+ </div> 
+  </br>     
+   <div class="row">
+       <div class="col-md-12 col-sm-12 col-xs-12" style="color:crimson;text-align:right;padding-right:6%;">
+           <i>
+               <p>Coût 177 500 F &nbsp;&nbsp; | &nbsp;&nbsp; Durée : 4 mois + 1 mois de stage</p> 
+           </i>
+       </div>  
+  </div>    
+   
+       
+ </br></br>
+ 
+<table class="table table-bordered" style="text-align:center; border-bottom:forestgreen solid 4px">
+  <thead>
+     <tr>
+      <th colspan="6" style="text-align:center;color:forestgreen;"><i><strong><p>PROGRAMME ET TRANCHE HORAIRE : ( à choisir et  confirmer avant le dédut des cours )</p><span style="color:grey">PROGRAMME 1 : </span><span style="color:crimson">LUNDI - MERCREDI - VENDREDI</span></strong></i></th>
+    </tr>  
+    <tr>
+      <th style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">8H - 10H</th>
+      <th style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">10H - 12H</th>
+      <th colspan="2" style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">12H - 14H</th>
+      <th colspan="2" style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">14H - 16H</th>
+    </tr>
+  </thead>
+</table>      
+  
+ <table class="table table-bordered" style="text-align:center; border-bottom:forestgreen solid 4px">
+  <thead>
+     <tr>
+      <th colspan="6" style="text-align:center;color:forestgreen;"><i><strong><span style="color:grey">PROGRAMME 2 : </span><span style="color:crimson">MARDI - JEUDI - VENDREDI</span></strong></i></th>
+    </tr>  
+    <tr>
+      <th style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">13H - 15H</th>
+      <th style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">15H - 17H</th>
+      <th colspan="2" style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">17H - 19H</th>
+      <th colspan="2" style="text-align:center;background-image:url(images/patterns/back.jpg);color:#fff;">19H - 21H</th>
+    </tr>
+  </thead>
+</table>   
+    
+</br></br>
+
+<div class="row">
+    <div class="col-md-5 col-sm-12 col-xs-12" style="text-align:center;">    
+       <img src="images/formation.jpg" width="88%" style="border-radius:10px;">
+    </div>
+    <div class="col-md-7 col-sm-12 col-xs-12">    
+        <span style="font-size:130%;">Pour tout autre information complémentaire, n'hésitez pas de vous rendre au CFAP 
+           <p>ou appelez au 6 77 78 89 17.</p>
+       </span>
+    </div>
+</div>           
+</br>
+ </div>          
+</div>     
+</div>
+            
+</br>            
+ 
+  </div>
+    
+    
+         <div class="col-md-3 col-sm-12 col-xs-12">
+             
+             <div class="row">
+                <div class="col-md-12" style="text-align:center;padding-top:0%;">
+                    <img src="images/monte7.png" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+            </br></br>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <img src="images/homeSlide/Image20.png" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+            </br></br>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <img src="images/homeSlide/Image23.png" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+             </br></br>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                   <img src="images/homeSlide/21.JPG" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+             </br></br>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <img src="images/homeSlide/Image26.png" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+             </br></br>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <img src="images/homeSlide/Image26.png" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+             </br></br>
+                </div>
+            
+        </div>
+
+</br></br></br>
+       
+</div>
+
+
+
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-5 col-sm-5 col-xs-5">
+       <img src="images/homeSlide/Image1.png" width="100%">
+    </div>
+     <div class="col-md-4 col-sm-4 col-xs-4" style="text-align:center;padding-top:0.5%;">
+       <span style="padding-top:-1%;" class="btn_sincrire_intro "><img src="images/logo/logo.png" width="23%"></span>
+       <span style="padding-top:2%;"><img src="images/homeSlide/cle.gif" width="50%"></span>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center;padding-top:1%;">
+       <img src="images/homeSlide/Image2.png" width="150%">
+    </div>
+</div>
+
+
+</br></b>
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+       <span style="color:crimson;font-size:150%;">
+           Apprendre un métier et obtenir le <span style="color:forestgreen">DQP (Diplôme de qualification professionnelle)</span>
+        </span>
+    </div>
+</div>
+</br>
+<div class="row" style="background:#e8e8e8;margin-left:7%;margin-right:7%;padding-top:1%;padding-bottom:1%;border-radius:5px;">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;">
+           <a href="formation_pro.html" style="padding:3%;color:#fff;">Secrétariat bureautique bilingue</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Secrétariat comptable</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Informatique appliquée à la gestion</a> 
+        </div>
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12">
+           <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+           <a href="formation_pro.html" style="padding:3%;color:#fff;">Graphisme de production</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Maintenance des systèmes informatiques</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Réseaux informatique</a> 
+        </div>
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12">
+           <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+               <a href="formation_pro.html" style="padding:3%;color:#fff;">Électricité</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html" style="padding:3%;color:#fff;">Maintenance électromécanique</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back.jpg);border-radius:5px;color:#fff;">
+            <a href="formation_pro.html/#chaudronerie" style="padding:3%;color:#fff;">Chaudronnerie</a> 
+        </div>
+    </div>
+</div>
+
+
+
+</br></b></br>
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+       <span style="color:crimson;font-size:110%;">
+        <i>Quelques liens utiles :</i>   
+        </span>
+    </div>
+</div>
+<div class="row" style="background:#e8e8e8;margin-left:7%;margin-right:7%;padding-top:1%;padding-bottom:1%;border-radius:5px;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+           <!--<div class="col-md-12 text-center"><h3>Product Carousel</h3></div>-->
+      <div class="col-md-12" style="margin-top: 1%; margin-bottom: 1%;">
+        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="5000" id="myCarousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.editions2015.com/cameroun/cartes.php"><img src="images/homeSlide2/drapeau.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="https://www.prc.cm/"><img src="images/homeSlide2/pr.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.spm.gov.cm/"><img src="images/homeSlide2/immeblEtoile.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minefop.cm/"><img src="images/homeSlide2/minefop5.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minresi.cm/"><img src="images/homeSlide2/minresi.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minesup.gov.cm/"><img src="images/homeSlide2/inivers.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minesec.cm/"><img src="images/homeSlide2/minesec2.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minedub.cm/"><img src="images/homeSlide2/minedub5.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minfopra.gov.cm/"><img src="images/homeSlide2/minefopra2.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.fnecm.org/"><img src="images/homeSlide2/fne.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            
+            </div>
+      </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</br></br></br></br>
+
+ 
+    <div class="row" style="font-size:120%;background-image:url(images/patterns/back.jpg);border-radius:0px;color:#fff;text-align:center;height:25px;">
+          <div class="col-md-12 col-sm-12 col-xs-12 ">  
+              <span style="font-size:120%;">Le CFAP est situé à " Entrée Laïc " face pharmacie PK8 | Tél : 6 77 78 89 17</span> 
+          </div>
+    </div>
+
+
+    <footer class="site-footer site-bottom-footer" style="text-align:center;">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                	<p>&copy; {{ 'dev1' | translate }} MEKE Béranger | mekebranger@yahoo.fr | (+237) 670 06 38 58 | {{ 'dev2' | translate }}</p>
+                </div>
+            	
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer --> 
+
+
+</div>
+<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>--> <!-- Jquery Library Call -->
+<script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="js/revolution-slider-init.js"></script> <!-- Revolutions Slider Intialization --> 
+<script src="vendor/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
+<script src="js/stat.js"></script>     
+</body>
+</html>

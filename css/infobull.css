@@ -1,0 +1,45 @@
+
+/*a{
+     color:#ccc;
+     text-shadow:0 -1px 0 black;                
+}
+a:hover,a:focus{
+     background:rgba(0,0,0,.4);
+     box-shadow:0 1px 0 rgba(255,255,255,.4);
+}*/
+a span1{
+    
+     margin-top:23px;
+     margin-left:-35px;
+}
+a span1{
+     position:absolute;                
+}
+a span1{
+     
+     color:#fff;
+    /* background:rgba(0,0,0,.9);*/
+    background:#000;
+     padding:2px;
+     border-radius:3px;
+     box-shadow:0 0 2px rgba(0,0,0,.5);
+}
+a span1{
+     
+     transform:scale(0) rotate(-12deg);
+}
+a:hover span1, a:focus span1{
+     transform:scale(1) rotate(0);        
+}
+a span1{
+     
+     transition:all .25s;
+}
+a span1{
+     
+     opacity:0;
+}
+a:hover span1, a:focus span1{
+     
+     opacity:1;
+}

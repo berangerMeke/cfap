@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>RELIANCE EDUCAIVE</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"><!-- MAGINIFIC LIGHTBOX -->
+<link href="vendor/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<link href="vendor/rs-plugin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/angular.js"></script>
+<!--<script src="js/angular-ui-router.js"></script>-->
+<!--<script src="js/state.js"></script>-->
+<script src="bower_components/angular-translate/angular-translate.js"></script>     
+<script src="js/translate.js"></script>  
+<script src="js/home-controller.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/modernizr.js"></script><!-- Modernizr -->    
+   
+</head>
+<body class="home" ng-app="gaeaApp" ng-controller="homeCtrl">
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	<!-- Start Site Header -->
+   
+	<header class="site-header">
+    	
+        
+        
+          <div class="row" style="margin-left:0%;margin-right:0%;margin-top:0.5%"> 
+                <div class="col-md-4 col-sm-4" style="background:#4CADC5;text-align:center; padding-top:1%;padding-bottom:1%;color:#fff;font-size:120%; border-radius:5px 0px 0px 0px;">
+                    <b>
+                       <i>{{'statique_title' | translate}}</i> 
+                    </b>    
+                </div>
+                <div class="col-md-4 col-sm-4" style="background:#EAEACB;text-align:center; padding-top:9px;padding-bottom:7px;">   
+                        <marquee scrollamount="4" class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid #4CADC5;font-size:120%;">{{'message' | translate}}</marquee>        
+                </div>
+                <div class="col-md-4 col-sm-4" style="background:#4CADC5;text-align:right; padding-top:1%;padding-bottom:1%; border-radius:0px 5px 0px 0px;">
+                        <a href="#" ng-click="changeLanguage('en')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">English  : 
+                         &nbsp;   <img src="images/drapeau/angl.png" width="7%">
+                        </a>    
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">Français  :
+                            &nbsp;<img src="images/drapeau/fran.png" width="6.5%">
+                        </a>
+                </div>
+            
+            </div>
+        
+       <!-- <h2>{{ 'HEADLINE' | translate }}</h2>-->
+       <!-- <p>{{ 'INTRO_TEXT' | translate }}</p>-->
+        
+        
+   
+        
+    	<div class="lower-header" style="background:#F7F7F7">
+        	<div class="container for-navi">
+             	<h1 class="logo">
+                    <a href="" class="btn_sincrire_intro ">
+                                <img src="images/logo/logoRELia.png" alt="" style="width:17%">
+                    </a>
+                     &nbsp;
+                    <span style="color:forestgreen;font-size:47%;"> 
+                       <strong>LA RELIANCE EDUCATIVE</strong> 
+                    </span>
+             	</h1>
+                
+         	<!-- Main Navigation MENU-->
+              	<nav class="main-navigation">
+                  	<ul class="sf-menu">
+                        <li><a href="index.html">{{ 'home' | translate }}</a></li>
+      					<li><a href="projet_ecole.html">{{ 'institution' | translate }}</a></li>
+                          <li><a href="">{{ 'school' | translate }}</a>
+                            <ul>
+                                <li><a href="">{{ 'cycle_school' | translate }}</a>
+                                    <ul>
+                                        <li><a href="maternelle.html">{{ 'nursly' | translate }}</a></li>
+                                        <li><a href="primaire.html">{{ 'primary' | translate }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">{{ 'reglement_interieur' | translate }}</a></li>
+                                <li><a href="resultats-examen.html">{{ 'resultats_examens' | translate }}</a></li>
+                                <li><a href="activite-extra-scolaire.html">{{ 'activites_extra_scolaires' | translate }}</a></li>
+                                <li><a href="">{{ 'association' | translate }}</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="admission.html">{{ 'admission' | translate }}</a></li>
+                        <li><a href="contact2.html">{{ 'contact' | translate }}</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Menu Trigger Icon -->
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        
+	</header>
+        
+        
+	<!-- End Site Header -->
+    <!-- Start Hero Slider -->
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    	<div class="main" role="main" style="margin-top:15%">
+    	<div id="content" class="content full">
+    		<div style="margin-left:5.5%;margin-right:5.5%;">
+                
+                
+                
+                
+                
+<div class="double-border"></div>
+    <!-- Secondary Header -->
+    <div class="secondary-bar">
+    	<div class="container">
+        	<div class="row" style="text-align:center;">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8" style="color:#4CADC5;font-size:130%;">
+                           <strong>Admission</strong>
+                        </div>
+                        <div class="col-md-2">
+                    </div>
+              	</div>    
+            </div>
+        </div>
+               
+                
+        
+                
+    </br>           
+                
+           
+                
+    
+                
+</br>             
+   <div class="row" style="margin:0.5%;">
+       <h3 class="title" style="color:forestgreen">Marche à suivre pour l'inscription</h3>
+      
+           <div class="row">
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <img src="images/inscription2.jpg" width="110%"> 
+               </div> 
+
+               <div class="col-md-8 col-sm-12 col-xs-12" style="text-align:justify;">
+                   <p style="font-size:120%;"> Les inscriptions sont possibles tout au long de l’année en fonction des places disponibles.</p>
+
+<p style="font-size:120%;">Les différentes étapes :</p>
+
+<ol style="font-size:120%;">
+<li>Remplir le formulaire d'Inscription et le faire parvenir à l'école</li>
+<li>L'école vous propose un rendez-vous, entretien et visite</li>
+<li>Décision de l'école et de la famille</li>
+<li>Confirmation d'inscription avec le versement des droits et des arrhes</li>
+</ol>
+<p style="font-size:120%;">Contacter le secrétariat par téléphone ou mail pour obtenir la marche à suivre.</p>
+<p><a href="document2.pdf" title="Pdf">
+        <img src="images/pdf.png" width="9%">&nbsp;
+          <span style="font-size:120%;color:#4CADC5";>Téléchargez le formulaire d'inscription</span> 
+    </a>
+</p>                   
+               </div>   
+           </div>
+    </div>
+    </br></br></br>  
+     <div class="row" style="margin:0.5%;">
+       <h3 class="title" style="color:forestgreen">Le dossier d'inscription</h3>
+      
+           <div class="row">
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <img src="images/dossier.jpg" width="110%"> 
+               </div> 
+
+               <div class="col-md-8 col-sm-12 col-xs-12" style="text-align:justify;">
+                     <p style="font-size:120%;"> Le dossier d’inscription doit être complété avec tous les éléments dont vous disposez afin de nous permettre de préparer au mieux l’évaluation de votre enfant. Une fois rempli, il vous est demandé de le faire parvenir à  au complexe scolaire bilingue <span style="color:#009900">La Réliance Educative</span>.</p>
+
+<p style="font-size:120%;">Suite à l'étude du dossier la direction  vous proposera si nécéssaire un rendez-vous.</p>
+
+<p style="font-size:120%;">Après cet éventuel rendez-vous, la direction vous apportera une réponse motivée à l’acceptation ou non de votre enfant au sein de l’école.</p>
+
+<p style="font-size:120%;">Si la candidature de votre enfant n’est pas acceptée, une réorientation peut être conseillée.</p>
+                   
+               </div>   
+           </div>
+    </div>
+    </br></br></br>         
+     <div class="row" style="margin:0.5%;">
+       <h3 class="title" style="color:forestgreen">Frais de scolarité</h3>
+      
+           <div class="row">
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <img src="images/payement.jpg" width="100%"> 
+               </div> 
+
+               
+               
+               
+               
+               <div class="col-md-8 col-sm-12 col-xs-12">
+                    
+                     <!-- Start Lead Block -->
+    <div class="lead-block2">
+    	<div class="container">
+            <div class="tabs" style="margin-right:28%">
+                <div class="nav-tabs-bar" style="margin-right:28%">
+                    <ul class="nav nav-tabs">
+                        <li class="active"> <a data-toggle="tab" href="#sampletab1">Conditions de payement</a> </li>
+                        <li> <a data-toggle="tab" href="#sampletab2">Frais pour la Maternelle</a> </li>
+                        <li> <a data-toggle="tab" href="#sampletab3">Frais pour le Primaire</a> </li>
+                    </ul>
+                 
+                </div>
+                <div class="tab-content" style="padding-top:2%;">
+                    <div id="sampletab1" class="tab-pane active">
+                            
+                        <ul style="font-size:120%;">
+                        <li>Les frais annuels sont payables en deux versements, sur facturation.</li>
+                        <li>La 1ère tranche doit être payée avant le 30/11/2016 </li>    
+                        <li>La 2ème tranche doit être payée avant le 10/02/2017 </li>    
+                        <li>En cas d'annulation, les droits d'inscription et les arrhes restent acquis à l'école.</li>
+                        <li>Tout trimestre commencé est dû.</li>
+                        </ul>
+                        
+                    </div>
+            
+            
+                    <div id="sampletab2" class="tab-pane">
+                          <div style="margin-left:2%;margin-right:2%;">
+                         <div class="row">
+                            <div class="col-md-12" style="color:darkslateblue;">
+                              <span style="color:crimson"><strong>Inscription : </strong></span>20 000 fcfa
+                            </div>
+                        </div>
+                        </br>
+                         <div class="row" style="background:#EAEACB;padding-top:2%;border-radius:5px;">
+                            <div class="col-md-12">
+                                 <div class="row" style="color:darkslateblue;">
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                        <strong style="color:forestgreen">1ère Tranche</strong>
+                                        <p style="color:darkslateblue;">xxxxxx fcfa</p>
+                                    </div>
+                                     <div class="col-md-4 col-sm-12 col-xs-12">
+                                         <strong style="color:forestgreen">2ème Tranche</strong>
+                                         <p style="color:darkslateblue;">xxxxxx fcfa</p>
+                                    </div>
+                                     <div class="col-md-4 col-sm-12 col-xs-12">
+                                         <strong style="color:forestgreen">Total</strong>
+                                         <p style="color:darkslateblue;">xxxxxx fcfa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    
+                    <div id="sampletab3" class="tab-pane">
+                       <div style="margin-left:2%;margin-right:2%;">
+                         <div class="row">
+                            <div class="col-md-12" style="color:forestgreen;">
+                              <span style="color:crimson"><strong>Inscription : </strong></span>20 000 fcfa
+                            </div>
+                        </div>
+                        </br>
+                         <div class="row" style="background:#4CADC5;padding-top:2%;border-radius:5px;">
+                            <div class="col-md-12">
+                                 <div class="row" style="color:forestgreen;">
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                        <strong style="color:#fff">1ère Tranche</strong>
+                                        <p style="color:#EAEACB;">xxxxxx fcfa</p>
+                                    </div>
+                                     <div class="col-md-4 col-sm-12 col-xs-12">
+                                         <strong style="color:#fff">2ème Tranche</strong>
+                                         <p style="color:#EAEACB;">xxxxxx fcfa</p>
+                                    </div>
+                                     <div class="col-md-4 col-sm-12 col-xs-12">
+                                         <strong style="color:#fff">Total</strong>
+                                         <p style="color:#EAEACB;">xxxxxx fcfa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div> 
+                        
+                         <!--<table class="table" style="text-align:left">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Inscription : 20 000 fcfa
+                                            </div>
+                                        </div>
+                                        </br>
+                                      <thead class="thead-inverse" style="color:darkslateblue;">
+                                        <tr>
+                                          <th><strong style="color:forestgreen">1ère Tranche</strong></th> 
+                                          <th><strong style="color:forestgreen">2ème Tranche</strong></th> 
+                                          <th><strong style="color:forestgreen">Total</strong></th> 
+                                        </tr>
+                                      </thead>
+                                      <tbody style="color:darkslateblue;">
+                                        <tr>
+                                          <td>35 000 fcfa</td>
+                                          <td>15 000 fcfa</td>
+                                          <td>50 000 fcfa</td>
+                                        </tr>
+                                      </tbody>
+                            </table> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+               </br></br></br></br>    
+               </div> 
+               
+               
+               
+               
+               
+  
+      </br></br></br>
+    <div class="row">
+       <h3 class="title" style="color:forestgreen">{{ 'calendrier_titre' | translate }}</h3>
+      
+           <div class="row" style="text-align:center;">
+                <p style="font-size:120%;">{{ 'calendrier_text' | translate }}
+</p
+                    
+</br></br>
+
+<table class="table table-bordered" style="text-align:center; border-bottom:#4CADC5 solid 4px">
+  <thead>
+    <tr>
+      <th style="padding-bottom:2%;background:#4CADC5;color:#fff;">{{ 'calendrier_periode' | translate }}</th>
+      <th style="text-align:center;background:#4CADC5;color:#fff;"><p>{{ 'calendrier_debut' | translate }}</p>{{ 'calendrier_debut1' | translate }}</th>
+      <th style="text-align:center;background:#4CADC5;color:#fff;"><p>{{ 'Reprise' | translate }}</p>{{ 'calendrier_reprise1' | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{ 'calendrier_periode1' | translate }}</th>
+      <td colspan="2">{{ 'calendrier_debut2_rentree_scolaire' | translate }}</td>
+    </tr>
+    <tr>
+      <th scope="row" style="background:#EAEACB;">{{ 'calendrier_periode2' | translate }}</th>
+      <td style="background:#EAEACB;">{{ 'calendrier_debut3' | translate }}</td>
+      <td style="background:#EAEACB;">{{ 'calendrier_reprise2' | translate }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{ 'calendrier_periode3' | translate }}</th>
+      <td>{{ 'calendrier_debut4' | translate }}</td>
+      <td>{{ 'calendrier_reprise3' | translate }}</td>
+    </tr>
+    <tr>
+      <th scope="row" style="background:#EAEACB;">{{ 'calendrier_periode4' | translate }}</th>
+      <td colspan="2" style="background:#EAEACB;">{{ 'calendrier_debut_gde_vacances' | translate }}</td>
+    </tr>
+  </tbody>
+</table>
+</br></br></br>
+    
+
+       
+</br></br>
+
+    <!-- End Featured Projects -->
+    <!-- Start Footer -->
+    <footer class="site-footer site-top-footer">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-3 col-sm-6 footer-widget widget text_widget">
+                	<h4 style="color:#fff;">{{ 'contact_localisation1' | translate }} :</h4>
+                    <p>Douala - Cameroun</p>
+                    <p>{{ 'contact_localisation2' | translate }}</p>
+                </div>
+            	<div class="col-md-3 col-sm-6 footer-widget widget instafeed_widget">
+                	<h4 style="color:#fff;">{{ 'contact_boite_postale' | translate }}</h4>
+                    <p>{{ 'contact_boite_postale1' | translate }} </p>
+                    <p>Douala - Cameroun</p>
+                </div>
+            	<div class="col-md-3 col-sm-6 footer-widget widget twitter_widget">
+                	<h4 style="color:#fff;">{{ 'contact_telephone' | translate }}</h4>
+                    <p>{{ 'contact_telephone1' | translate }}</p>
+                    <p>{{ 'contact_telephone2' | translate }}</p>
+                    <p>{{ 'contact_telephone3' | translate }}</p>
+                </div>
+            	<div class="col-md-3 col-sm-6 footer-widget widget text_widget">
+                	<h4 style="color:#fff;">{{ 'contact_email' | translate }}:</h4>
+                    <p>mail@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="site-footer site-bottom-footer">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                	<p>&copy; {{ 'dev1' | translate }} MEKE Béranger | mekebranger@yahoo.fr | (+237) 670 06 38 58 | {{ 'dev2' | translate }}</p>
+                </div>
+            	
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+</div>
+<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>--> <!-- Jquery Library Call -->
+<script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="js/revolution-slider-init.js"></script> <!-- Revolutions Slider Intialization --> 
+<script src="vendor/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
+<script src="js/stat.js"></script>     
+</body>
+</html>

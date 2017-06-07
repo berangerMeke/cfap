@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>RELIANCE EDUCAIVE</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"><!-- MAGINIFIC LIGHTBOX -->
+<link href="vendor/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<link href="vendor/rs-plugin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+ 
+<link rel="stylesheet" type="text/css" href="google-map/examples.css" />    
+    
+<style type="text/css">
+	#map-canvas{
+		height: 400px;
+		width: 700px;
+		border: 2px solid red;
+		}
+</style>    
+    
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/angular.js"></script>
+<!--<script src="js/angular-ui-router.js"></script>-->
+<!--<script src="js/state.js"></script>-->
+<script src="bower_components/angular-translate/angular-translate.js"></script>     
+<script src="js/translate.js"></script>  
+<script src="js/home-controller.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/modernizr.js"></script><!-- Modernizr -->    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    
+</head>
+<body class="home" ng-app="gaeaApp" ng-controller="homeCtrl">
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	<!-- Start Site Header -->
+   
+	<header class="site-header">
+    	
+            <div class="row" style="margin-left:0%;margin-right:0%;margin-top:0.5%"> 
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:center; padding-top:14px;padding-bottom:13px;color:#fff;font-size:200%; border-radius:5px 0px 0px 0px;">
+                    <b>
+                       <i>CFAP</i> 
+                    </b>    
+                </div>
+                 <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4.jpg) repeat;text-align:center; padding-top:11px;padding-bottom:10px;">   
+           
+                        <marquee class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid green;font-size:120%;"> Cours d'anglais début de la prochaine session <span style="color:red"> 08 / 04 / 2017</span></marquee>        
+                </div>
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:right; padding-top:1%;padding-bottom:1%; border-radius:0px 5px 0px 0px;">
+                        <a href="#" ng-click="changeLanguage('en')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
+                         &nbsp; Read us in : <strong>English</strong>   
+                        </a>    
+                     <!--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">Français  :
+                            &nbsp;<img src="images/drapeau/fran.png" width="6.5%">
+                        </a>-->
+                </div>
+            
+            </div>
+            
+        
+       <!-- <h2>{{ 'HEADLINE' | translate }}</h2>-->
+       <!-- <p>{{ 'INTRO_TEXT' | translate }}</p>-->
+        
+        
+   
+        
+    	<div class="lower-header">
+        	<div class="container for-navi">
+             	<div class="container for-navi">
+             	<h1 class="logo" style="margin-left:0%;">
+                    <a href="" class="btn_sincrire_intro ">
+                                <img src="images/logo/logo.png" alt="" style="width:20%">
+                    </a>
+                     &nbsp;
+                    <img src="images/logo/textlogo.png" alt="" style="width:70%">
+             	</h1>
+                
+              	<!-- Main Navigation MENU-->
+              	<nav class="main-navigation">
+                  	<ul class="sf-menu">
+                        <li><a href="index.html">{{ 'home' | translate }}</a></li>
+      					<li><a href="">{{ 'institution' | translate }}</a></li>
+                          <li><a href="">{{ 'school' | translate }}</a>
+                            <ul>
+                                <li><a href="">{{ 'langue' | translate }}</a>
+                                    <ul>
+                                        <li><a href="anglais.html">{{ 'anglais' | translate }}</a></li>
+                                        <li><a href="">{{ 'francais' | translate }}</a></li>
+                                        <li><a href="">{{ 'italien' | translate }}</a></li>
+                                        <li><a href="">{{ 'allemand' | translate }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="resultats-examen.html">{{ 'informatique_menu' | translate }}</a>
+                                     <ul>
+                                        <li><a href="omo.html">{{ 'omo' | translate }}</a></li>
+                                        <li><a href="ts.html">{{ 'ts' | translate }}</a></li>
+                                        <li><a href="iag.html">{{ 'iag' | translate }}</a></li> 
+                                    </ul>
+                                </li> 
+                                <li><a href="infographie.html">{{ 'info' | translate }}</a></li>
+                                <li><a href="formation_pro.html">{{ 'professionnelle' | translate }}</a></li>                                
+                                <!--<li><a href="activite-extra-scolaire.html">{{ 'activites_extra_scolaires' | translate }}</a></li>
+                                <li><a href="">{{ 'association' | translate }}</a></li>-->
+                            </ul>
+                        </li>
+                         <li><a href="">{{ 'admission' | translate }}</a></li>
+                        <li><a href="contact2.html">{{ 'contact' | translate }}</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Menu Trigger Icon -->
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        
+	</header>
+        
+        
+	<!-- End Site Header -->
+    <!-- Start Hero Slider -->
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+<div style="margin-top:15%;margin-left:5.5%;margin-right:5.5%;">
+    <div class="double-border"></div>
+    <!-- Secondary Header -->
+    <div class="secondary-bar">
+    	<div class="container">
+        	<div class="row" style="text-align:center;">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8" style="color:forestgreen;font-size:130%;">
+                           <strong>{{ 'contact' | translate }}</strong>
+                        </div>
+                        <div class="col-md-2">
+                    </div>
+              	</div>    
+            </div>
+        </div> 
+</div>        
+        
+        
+     
+    
+    
+    
+    
+        
+    <!-- Start Body Content -->
+  	<div class="main" role="main">
+    	<div id="content" class="content full">
+    		<div style="margin-left:5.5%;margin-right:5.5%;">
+            	<div class="row">
+                    <div class="col-md-8">
+                        <div class="row" >
+                            
+                           <div class="col-md-12" style="text-align:center;margin-top:4%;"> 
+                                <div class="span11" style="width:100%;">
+                                    <div id="map"></div>
+                                </div>
+				            </div> 
+                        
+                      
+                            
+                        </div>
+                        <div class="spacer-20"></div>
+                        </br></br></br></br>
+                        <h2>{{ 'contact_formulaire_titre' | translate }}</h2>
+                        <div class="row">
+                            <form method="post" id="contactform" name="contactform" class="contact-form clearfix">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="{{ 'contact_formulaire_nom' | translate }}*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="{{ 'contact_formulaire_email' | translate }}*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="{{ 'contact_formulaire_tel' | translate }}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea cols="6" rows="7" id="content2" name="comments" class="form-control input-lg" placeholder="{{ 'contact_formulaire_message' | translate }}"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input id="send_email" name="submit" type="submit" class="btn btn-primary btn-lg pull-right" value="{{ 'contact_formulaire_bouton_envoyer' | translate }}">
+                                </div>
+                                </br>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="message"></div>
+                    
+                    
+                    
+                    
+                    
+   <!--                 <div id="container">
+<h1>Mailer In Node.JS</h1>
+<input id="to" type="text" placeholder="Enter E-mail ID where you want to send" />
+<input id="subject" type="text" placeholder="Write Subject" />
+<textarea id="content2" cols="40" rows="5" placeholder="Write what you want to send"></textarea>
+<button id="send_email">Send Email</button>
+<span id="message"></span>
+</div>-->
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                
+                
+                
+                
+                
+                
+                
+                    <!-- Start Sidebar -->
+                    <div class="col-md-4 sidebar right-sidebar">
+                    	<div class="widget sidebar-widget text_widget"> 
+                        	<h3 class="title"> <img src="images/maker.png" alt="" width="15%"> {{ 'contact_localisation1' | translate }}</h3>
+                            <address>
+                            	Douala - Cameroun<br>
+                                Situé à " entrée Laïc " face pharmacie PK8<br>
+                            </address>
+                       	</div>
+                        </br>
+                    	<div class="widget sidebar-widget text_widget">
+                        	<h3 class="title"><img src="images/BP.png" alt="" width="15%"> {{ 'contact_boite_postale' | translate }}</h3>
+                            <address>
+                            	{{ 'contact_boite_postale1' | translate }} <br>
+                                Douala - Cameroun<br>
+                            </address>
+                       	</div>
+                        </br>
+                    	<div class="widget sidebar-widget text_widget">
+                        	<h3 class="title"><img src="images/tel2.png" alt="" width="15%"> {{ 'contact_telephone' | translate }}</h3>
+                            <address>
+                            	6 77 78 89 17
+                            </address>
+                       	</div>
+                        </br>
+                        <div class="widget sidebar-widget text_widget">
+                        	<h3 class="title"><img src="images/email.png" alt="" width="16%"> {{ 'contact_email' | translate }}</h3>
+                            <address>
+                            	mail@gmail.com<br>
+                            </address>
+                       	</div>
+                    </div>
+                </div>
+</div>
+
+
+ </br></br></br>
+  </br></br></br></br>
+
+    <div class="row" style="font-size:120%;background-image:url(images/patterns/back.jpg);border-radius:0px;color:#fff;text-align:center;height:25px;">
+          <div class="col-md-12 col-sm-12 col-xs-12 ">  
+              <span style="font-size:120%;">Le CFAP est situé à " Entrée Laïc " face pharmacie PK8 | Tél : 6 77 78 89 17</span> 
+          </div>
+    </div>
+
+
+    <footer class="site-footer site-bottom-footer" style="text-align:center;">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                	<p>&copy; {{ 'dev1' | translate }} MEKE Béranger | mekebranger@yahoo.fr | (+237) 670 06 38 58 | {{ 'dev2' | translate }}</p>
+                </div>
+            	
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer --> 
+</div>
+    <!-- End Footer -->
+
+
+
+
+
+            </div>
+       	</div>
+   	</div>
+    
+     
+</div>
+<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>--> <!-- Jquery Library Call -->
+<script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="js/revolution-slider-init.js"></script> <!-- Revolutions Slider Intialization --> 
+<script src="vendor/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
+<script src="js/stat.js"></script> 
+    
+    
+    
+<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC7lBOlbQoB7RY_FWEQjxsDCAZdeg6JqQ0&callback=beranger"></script>-->
+  
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7lBOlbQoB7RY_FWEQjxsDCAZdeg6JqQ0&callback=initMap"
+    ></script>
+
+
+
+<script type="text/javascript" src="google-map/gmaps.js"></script>    
+    
+    
+    
+<script type="text/javascript">
+  	var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        el: '#map',
+        lat: 4.0460204 ,
+        lng: 9.753264099999999
+      });
+      map.addMarker({
+        lat: 4.0457,
+        lng: 9.75326409999999,
+        title: 'CFAP',
+        details: {
+          database_id: 42,
+          author: 'HPNeo'
+        },
+        click: function(e){
+          if(console.log)
+            console.log(e);
+          /* alert('AE3D se trouve ici'); */
+        },
+        mouseover: function(e){
+          if(console.log)
+            console.log(e);
+        }
+      });
+    });
+  </script>    
+    
+    
+    
+
+<!-- Pour l'envoie du email-->   
+<script>
+$(document).ready(function(){
+    var from,to,subject,text;
+    $("#send_email").click(function(){     
+        to=$("#to").val();
+        subject="Nom: "+$("#name").val()+"____"+" Email: "+$("#email").val()+"____"+"Tél: "+$("#phone").val();
+        text=$("#content2").val();
+        $("#message").text("Sending E-mail...Please wait");
+        $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+        if(data=="sent")
+        {
+            $("#message").empty().html(" Email is been sent at "+to+" . Please check inbox! ");
+ 
+        }
+
+});
+     
+        //vider les input
+        document.getElementById('name').value="";
+        document.getElementById('email').value="";
+        document.getElementById('phone').value="";
+        document.getElementById('content2').value="";
+         
+    });
+});
+</script>    
+    
+    
+    
+    
+</body>
+</html>
