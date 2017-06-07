@@ -31,6 +31,8 @@
         "/home/beranger/ProjetCfap/Template/google-map/test/spec/MarkerSpec.js",
         "/home/beranger/ProjetCfap/Template/google-map/test/spec/StreetViewSpec.js",
         "/home/beranger/ProjetCfap/Template/google-map/test/spec/StyleSpec.js",
-        "/home/beranger/ProjetCfap/Template/google-map/test/spec/LayerSpec.js"
+        "/home/beranger/ProjetCfap/Template/google-map/test/spec/LayerSpec.js",
+        "/home/beranger/ProjetCfap/siteCfap/cfap/vendor/fullcalendar/fullcalendar.js",
+        "/home/beranger/ProjetCfap/siteCfap/cfap/Server.js"
     ]
 }

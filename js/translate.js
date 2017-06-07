@@ -444,7 +444,7 @@ app.config(function($translateProvider) {
       
       /************** DEBUT DU HOME SLIDE ****************/
         big_text_slide1:'LE CFAP',
-        smallTextSlide1:'La compétence au service de l\'exellence',
+        smallTextSlide1:'La compétence au service de l\'entreprise',
       
         big_text_slide2:'Formation en',
         small_text_slide2:'Langues et en Informatique...',
