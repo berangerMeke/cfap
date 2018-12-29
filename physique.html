@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>FS</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"><!-- MAGINIFIC LIGHTBOX -->
+<link href="vendor/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<link href="vendor/rs-plugin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"><!-- REVOLUTION SLIDER -->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+    
+    
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />  
+    
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/angular.js"></script>
+<!--<script src="js/angular-ui-router.js"></script>-->
+<!--<script src="js/state.js"></script>-->
+<script src="bower_components/angular-translate/angular-translate.js"></script>     
+<script src="js/translate.js"></script>  
+<script src="js/home-controller.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/modernizr.js"></script><!-- Modernizr -->    
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>     
+<script type="text/javascript" src="js/jquery.cslider.js"></script>     
+     
+    
+    
+    <script>
+      $(document).ready(function() {
+
+        $('.carousel[data-type="multi"] .item').each(function(){
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i=0;i<2;i++) {
+            next=next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        });
+
+      });
+    </script>  
+    
+    
+    
+</head>
+<body class="home" ng-app="gaeaApp" ng-controller="homeCtrl">
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	<!-- Start Site Header -->
+   
+<header class="site-header">
+    	
+            <div class="row" style="margin-left:0%;margin-right:0%;margin-top:0.5%"> 
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4) repeat;text-align:center; padding-top:14px;padding-bottom:13px;color:#fff;font-size:100%; border-radius:5px 0px 0px 0px;">
+					<img src="images/logo/logo.jpg" alt="" style="width:30px">&nbsp;&nbsp;
+                    <strong>
+                       <i style="font-size: 120%"> {{ 'statique_title' | translate }}</i> 
+                    </strong>    
+                </div>
+                 <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4) repeat;text-align:center; padding-top:11px;padding-bottom:24px;">   
+           
+                        <marquee class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid green;font-size:120%;"> Réprise des cours à l'université de Douala au compte du 2nd semestre le <span style="color:red"> 03 / 01 / 2019</span></marquee>        
+                </div>
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4) repeat;text-align:right; padding-top:1%;padding-bottom:26px; border-radius:0px 5px 0px 0px;">
+					<span ng-show="langueAn">
+                        <a href="#" ng-click="changeLanguage('en')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
+                         &nbsp; Read us in : <strong>English</strong>   
+                        </a>
+					</span>
+					<span ng-show="langueFr">
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
+                         &nbsp; Lisez-nous en : <strong>Français</strong>   
+                        </a>
+					</span>
+						
+                     <!--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">Français  :
+                            &nbsp;<img src="images/drapeau/fran.png" width="6.5%">
+                        </a>-->
+                </div>
+            
+            </div>
+            
+        
+       <!-- <h2>{{ 'HEADLINE' | translate }}</h2>-->
+       <!-- <p>{{ 'INTRO_TEXT' | translate }}</p>-->
+        
+        
+   
+        
+    	<div class="lower-header">
+        	<div class="container for-navi">
+             	<div class="container for-navi">
+             	<h1 class="logo" style="margin-left:0%;">
+                    <a href="" class="btn_sincrire_intro ">
+                                <img src="images/logo/logoFS.png" alt="" style="width:20%">
+                    </a>
+                     &nbsp;
+					<i style="font-size: 70%">{{ 'statique_title2' | translate }}</i>
+             	</h1>
+                
+              	<!-- Main Navigation MENU-->
+              	<nav class="main-navigation">
+                  	<ul class="sf-menu">
+                        <li><a href="index.html">{{ 'home' | translate }}</a></li>
+                          <li><a href="">{{ 'school' | translate }}</a>
+                            <ul>
+                                <li><a href="">{{ 'langue' | translate }}</a>
+                                    <ul>
+                                        <li><a href="biologie_vegetale.html">{{ 'anglais' | translate }}</a></li>
+                                        <li><a href="biologie_animale.html">{{ 'francais' | translate }}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="maths_info.html">{{ 'informatique_menu' | translate }}</a>
+                                </li> 
+                                <li><a href="geosciences.html">{{ 'info' | translate }}</a></li>
+                                <li><a href="physique.html">{{ 'professionnelle' | translate }}</a></li>               
+                                <li><a href="Chimie.html">{{ 'association' | translate }}</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="">{{ 'institution' | translate }}</a>
+							 <ul>
+                                <li><a href="http://www.systhag-online.cm:8080/SYSTHAG-ONLINE/faces/etudiants/preInscription.xhtml">{{ 'preinscription' | translate }}</a></li>
+                                <li><a href="http://facsciences-online.cm/login.php">{{ 'school_project' | translate }}</a></li>               
+                                <li><a href="http://facsciences-online.cm/is/index.php">{{ 'educatif_project' | translate }}</a></li>
+                            </ul>
+						 </li>
+                         <li><a href="">{{ 'recherche' | translate }}</a>
+							<ul>
+                                <li><a href="">{{ 'recherche1' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche2' | translate }}</a></li> 
+                                <li><a href="">{{ 'recherche3' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche4' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche5' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche6' | translate }}</a></li>
+                            </ul>					
+						 </li>
+                        <li><a href="contact2.html">{{ 'contact' | translate }}</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Menu Trigger Icon -->
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        
+		</div>
+			
+			
+	</header>
+        
+	<!-- End Site Header -->
+    <!-- Start Hero Slider -->
+    
+    
+     
+    
+    
+    	<div class="main" role="main" style="margin-top:15%">
+    	<div id="content" class="content full">
+    		<div style="margin-left:5.5%;margin-right:5.5%;">
+                
+                
+                
+                
+                
+<div class="double-border"></div>
+    <!-- Secondary Header -->
+    <div class="secondary-bar">
+    	<div class="container">
+        	<div class="row" style="text-align:center;">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8" style="color:forestgreen;font-size:130%;">
+                           <strong style="color:hotpink;font-size:80%;">PHYSIQUE</strong>
+                        </div>
+                        <div class="col-md-2">
+                    </div>
+              	</div>    
+            </div>
+        </div>
+               
+                
+        
+                
+    </br>           
+                
+           
+                
+    
+                
+</br>             
+  <div class="row" style="margin-left:-0.5%;margin-right:-0.5%;">
+        <div class="col-md-9 col-sm-12 col-xs-12" >
+     
+<div  style="font-size:110%;">            
+   <div class="row">
+       <div class="col-md-12 col-sm-12 col-xs-12" style="background:#F7F7F7;border-radius:10px;margin:1%;">
+           
+           <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12" style="padding-top:8%">
+                    <div class="row" style="padding-top:0%;margin-top:0%;">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <img src="images/biologieImages/phys.gif" style="border-radius:12px;" width="90%">
+                        </div>
+                    </div>      
+                </div>
+               
+               
+                <div class="col-md-8 col-sm-12 col-xs-12" style="padding-top:1%">
+                    
+<!--<h3 itemprop="name">{{ 'maternelle_titre' | translate }} <span style="color:#009900">maîtriser...</span> </h3>-->
+
+<div class="row"> 
+	<div class="col-md-12 col-sm-12 col-xs-12">    
+		<p>   
+		<strong><span style="color:dodgerblue;font-size: 120%">Licence :</span></strong>
+		</p>
+		<ul style="font-size: 110%">
+		<li>Licence de Biologie Humaine et Santé
+		</li>
+		<li>Licence de Biologie des Organismes et des Ecosystèmes spécialité Ecologie
+		</li>
+		</ul>    
+	 </div>   
+</div> 
+
+</br>					
+</br>					
+					
+<div class="row"> 
+	<div class="col-md-12 col-sm-12 col-xs-12">    
+		<p>   
+		<strong><span style="color:dodgerblue;font-size: 120%">Master :</span></strong>
+		</p>
+		<ul style="font-size: 110%">
+		<li>Master de Zoologie Approfondie
+		</li>
+		<li>Master de Physiologie Animale Générale
+		</li>
+		</ul>    
+	 </div>   
+</div>
+					         
+ </div>              
+    </div>   
+        
+    
+       </br>   
+
+ </div>          
+</div>     
+</div>
+            
+</br>            
+ 
+  </div>
+    
+    
+         <div class="col-md-3 col-sm-12 col-xs-12">
+             
+             <div class="row">
+                <div class="col-md-12" style="text-align:center;padding-top:3%;">
+                    <img src="images/biologieImages/elect4.jpg" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+            </br>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <img src="images/biologieImages/phy2.gif" class="img-thumbnail post-thumb" width="90%" style="border-radius:15px;">
+                </div>
+            </div>
+          
+           
+             </br></br>
+         
+                </div>
+            
+        </div>
+
+</br></br></br>
+       
+</div>
+
+
+
+</br></b>
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+       <span style="color:deeppink;font-size:130%;">
+           <span>Départements de la faculté des sciences :</span>
+        </span>
+    </div>
+</div>
+</br>
+<div class="row" style="background:#e8e8e8;margin-left:7%;margin-right:7%;padding-top:1%;padding-bottom:1%;border-radius:5px;">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+            <a href="biologie_vegetale.html" style="padding:3%;color:#fff;">Biologie des organismes végétaux</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+            <a href="biologie_animale.html" style="padding:3%;color:#fff;">Biologie des organismes animaux</a> 
+        </div>
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12">
+           <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+           <a href="maths_info.html" style="padding:3%;color:#fff;">Mathématiques & Informatique</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+            <a href="physique.html" style="padding:3%;color:#fff;">Physique</a> 
+        </div>
+		 <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+               <a href="geosciences.html" style="padding:3%;color:#fff;">Géosciences</a> 
+        </div>
+    </div>
+     <div class="col-md-4 col-sm-12 col-xs-12">
+           <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+               <a href="Chimie.html" style="padding:3%;color:#fff;">Chimie</a> 
+        </div>
+        <div class="row" style="margin:2%;background-image:url(images/patterns/back4);border-radius:5px;color:#fff;">
+            <a href="biochimie.html" style="padding:3%;color:#fff;">Biochimie</a> 
+        </div>
+    </div>
+</div>
+
+
+
+</br></b></br>
+
+<div class="row" style="margin-left:7%;margin-right:7%;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+       <span style="color:crimson;font-size:110%;">
+        <i>Quelques liens utiles :</i>   
+        </span>
+    </div>
+</div>
+<div class="row" style="background:#e8e8e8;margin-left:7%;margin-right:7%;padding-top:1%;padding-bottom:1%;border-radius:5px;">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+           <!--<div class="col-md-12 text-center"><h3>Product Carousel</h3></div>-->
+      <div class="col-md-12" style="margin-top: 1%; margin-bottom: 1%;">
+        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.editions2015.com/cameroun/cartes.php"><img src="images/homeSlide2/drapeau.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="https://www.prc.cm/"><img src="images/homeSlide2/pr.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.spm.gov.cm/"><img src="images/homeSlide2/immeblEtoile.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div> 
+			<div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minesup.gov.cm/"><img src="images/homeSlide2/inivers.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minefop.cm/"><img src="images/homeSlide2/minefop5.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minresi.cm/"><img src="images/homeSlide2/minresi.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.minfopra.gov.cm/"><img src="images/homeSlide2/minefopra2.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="http://www.fnecm.org/"><img src="images/homeSlide2/fne.jpeg" class="img-responsive" width="100%;"></a>
+              </div>
+            </div>
+            
+            </div>
+      </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</br></br></br></br>
+
+ 
+   <div class="row" style="font-size:120%;background: gray;border-radius:0px;color:#fff;text-align:center;height:25px;">
+          <div class="col-md-12 col-sm-12 col-xs-12 ">  
+              <span style="font-size:100%;">TPE || Thème : conception du site web de la faculté des sciences de l'univerté de Daoula</span> 
+          </div>
+    </div>
+
+
+    <footer class="site-footer site-bottom-footer" style="text-align:center;">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12 col-sm-12">
+                	<p>&copy; {{ 'dev1' | translate }} le groupe de TPE N°2 | Programmation web |Niveau 1|Sous-département Informatique|Sémestre 1 / 2018-2019 | {{ 'dev2' | translate }}</p>
+                </div>
+            	
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer --> 
+
+
+</div>
+<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>--> <!-- Jquery Library Call -->
+<script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="js/revolution-slider-init.js"></script> <!-- Revolutions Slider Intialization --> 
+<script src="vendor/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
+<script src="js/stat.js"></script>     
+</body>
+</html>

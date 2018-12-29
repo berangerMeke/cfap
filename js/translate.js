@@ -10,7 +10,8 @@ app.config(function($translateProvider) {
     
     /***************** LA NAVBAR *****************/ 
       
-    statique_title:'BILINGUAL SCHOOL COMPLEX',  
+    statique_title:'University of Douala',  
+    statique_title2:'Faculty of science',  
      
     message:'The activities related to the closing of the school year 2016 - 2017 at the Complexe Scolaire LA RELIANCE EDUCATIVE will take place on 03 June 2017',  
       
@@ -43,8 +44,8 @@ app.config(function($translateProvider) {
        
       
     /************** DEBUT DU HOME SLIDE ****************/
-        big_text_slide1:'RELIANCE EDUCATIVE',
-        smallTextSlide1:'Expertise in the service of exellence',
+        big_text_slide1:'FACULTY OF SCIENCE',
+        smallTextSlide1:'University of Douala',
       
         big_text_slide2:'Practical',
         small_text_slide2:'computer courses',
@@ -403,7 +404,8 @@ app.config(function($translateProvider) {
     
   /******************* LA NAVBAR ******************/  
       
-    statique_title:'COMPLEXE SCOLAIRE BILINGUE',  
+    statique_title:'Université de Douala',  
+    statique_title2:'Faculté des sciences',  
     
     message:'Les activités relatives à la cloture de l\'année scolaire 2016 - 2017 au Complexe Scolaire LA RELIANCE EDUCATIVE auront lieu le 03 Juin 2017',  
       
@@ -411,28 +413,32 @@ app.config(function($translateProvider) {
       
     /*MENU */
     home: 'ACCUEIL',
-    institution: 'APROPOS DU CFAP',
+    institution: 'SCOLARITE',
       /*sous menu-institution*/
-            presentation:'Projet de l\'école',
-            school_project:'Projet de l\'école',
-            educatif_project:'Projet éducatif', 
-    school: 'FORMATION',
+            preinscription:'Préinscription',
+            school_project:'Inscription administrative',
+            educatif_project:'Inscription accadémique',
+	 recherche: 'RECHERCHE',
+      /*sous menu-institution*/
+            recherche1:'Unité de Formation Doctorale',
+            recherche2:'Laboratoire de Recherche',
+            recherche3:'Equipe de Recherche',
+            recherche4:'Thèses & HDR soutenues',
+            recherche5:'Publications',
+            recherche6:'Inscription Doctoral / PhD',
+     school: 'DEPARTEMENT',
             /*sous menu-school*/
-            langue:'Langues',
-                anglais:'Anglais',
-                franais:'Français',
+            langue:'Biologie',
+                anglais:'Biologie des organismes végétaux',
+                francais:'Biologie des organismes animaux',
                 italien:'Italien',
                 allemand:'Allemand',
-            informatique_menu:'Informatique bureautique',
-                omo:'Opérateur sur micro-ordinateur',
-                ts:'Technique de secrétariat',
-                iag:'Informatique appliquée à la gestion',
-            info:'Infographie',
-            professionnelle:'Professionnelle',
-            school_life:'Professionnelle',
-                    rythme_scolaire:'Rythme scolaire',
-                    association:'Association',
-                    activites_extra_scolaires:'Activités extra scolaires',
+            informatique_menu:'Mathématiques & Informatique',
+                omo:'Mathématiques',
+                ts:'Informatique',
+            info:'Géosciences',
+            professionnelle:'Physique',
+            association:'Chimie',
     admission: 'SUIVI POST-FORMATION',
                     reglement_interieur:'Règlement intérieur',
     contact: 'CONTACT',   
@@ -443,14 +449,23 @@ app.config(function($translateProvider) {
       
       
       /************** DEBUT DU HOME SLIDE ****************/
-        big_text_slide1:'LE CFAP',
-        smallTextSlide1:'La compétence au service de l\'entreprise',
+        big_text_slide1:'FACUlTE DES SCIENCES',
+        smallTextSlide1:'Université de Douala',
       
-        big_text_slide2:'Formation en',
-        small_text_slide2:'Langues et en Informatique...',
+        big_text_slide2:'Salle',
+        small_text_slide2:'Informatique...',
       
-        big_text_slide3:'....',
-        small_text_slide3:'Apprendre c\'est découvrir...', 
+        big_text_slide3:'Laboratoires',
+        small_text_slide3:'Chimie - Biochimie - Biologie - Géoscience',
+	  
+	  	big_text_slide4:'Dévéloppement',
+        small_text_slide4:'Mathématiques - Physiques',
+	  
+	  	big_text_slide5:'Etudiands',
+        small_text_slide5:'a l\'amphitheatre',
+	  
+	  	big_text_slide6:'Etudiandes',
+        small_text_slide6:'Face au barbillard',
     /************** FIN DU HOME SLIDE ****************/ 
       
       
@@ -459,30 +474,20 @@ app.config(function($translateProvider) {
      /************** DEBUT PAGE  ACCUEIL  ******************/
      
       presentation:'Présentation',
-      centre_formation:'Centre de Formation et d\'Application Professionnelle',
-      complexe_scolaire_minus:'complexe scolaire bilingue',
+      complexe_scolaire_minus:'La faculté des Sciences (FS)',
       
-      initiation:'initiation théorique et pratique à l’informatique',
-      reussite_epanouissement_mérite:'Réussite, épanouissement, mérite, écoute, font partie de nos maîtres-mots.',
-      compose_le:'COMPOSEZ LE',
-      pour_nous_joindre:'POUR NOUS JOINDRE',
+      texte3:' de l’Université de Douala (UD) est située pour l’essentiel au CAMPUS II à NDOGBONG à côté de l’ENSET et de l’I.U.T. Ce campus abrite le Décanat, les salles de cours, les laboratoires et un amphi théâtre de 100 places. La Faculté dispose aussi d’un amphithéâtre au campus I à l’ESSEC en face du gymnase. Elle bénéficie par ailleurs de quelques locaux à l’ancien Rectorat à Akwa qui abritent notamment',
       
-      texte1:'Bienvenue au',
-      texte2:'établissement d’enseignement privé, situé à Douala-Cameroun, dans l\'arrondissement de Douala 4ème (Bonabéri) par "Quatre étages" au lieu dit "Barrière Washington".',
+      texte4:'le CEPAMOQ (Centre de Physique Atomique Moléculaire et Optique Quantique). Il convient également de signaler plusieurs salles de cours et de deux amphithéâtres de 500 places que la Faculté des Sciences partage avec les autres Facultés de l’Université de Douala au campus « Extension » à NDOGBONG. L’année académique est repartie en deux (2) semestres comprenant chacun entre quatorze (14) et seize (16) semaines d’enseignement et d’évaluation.',
       
-      texte3:'Notre établissement est composé des cycles maternelle et primaire bilingues(Français/Anglais). Fondées en 2012, cet institution à été créée pour offrir un enseignement de qualité dans un cadre privilégié. Filles et garçons sont accueillis dans un cadre familial. Ils y apprennent en toute sérénité tout en s\'épanouissant.',
-      
-      texte4:'Dès leur entrée en primaire, les élèves profitent entre autres d\'une',
-      texte5:'De nombreuses activités récréatives sont proposées permettant de créer un climat agréable et convivial, ainsi qu’un bon équilibre de vie.',
-      
-      texte6:'Des valeurs essentielles pour apprendre mieux et qui sont les clés de la réussite pour la poursuite des études. Au',
+     /* texte6:'Des valeurs essentielles pour apprendre mieux et qui sont les clés de la réussite pour la poursuite des études. Au',
     texte7:'l’élève est au centre de notre pédagogie. Grâce à un suivi personnalisé, l\'élève est écouté, guidé, orienté et comprend mieux ses objectifs.',  
     
-      texte8:'Si vous recherchez pour votre enfant un établissement privé d’enseignement où il pourra apprendre dans les meilleures conditions, dans la ville de Douala et notamment à Bonabéri, n\'hésitez pas à nous appeler au 675 68 67 26 / 697 80 50 36 / 677 32 28 71.',
+      texte8:'Si vous recherchez pour votre enfant un établissement privé d’enseignement où il pourra apprendre dans les meilleures conditions, dans la ville de Douala et notamment à Bonabéri, n\'hésitez pas à nous appeler au 675 68 67 26 / 697 80 50 36 / 677 32 28 71.',*/
       
-      apprendre_grandir:'Mon avenir commence ici et maintenant...',
+      apprendre_grandir:'Activités au campus...',
       
-      salle_cours:'Maîtriser les langues... Posséder le monde',
+      salle_cours:'Maîtriser la science... Posséder le monde',
       enfant_precoce_text:'Un enfant à haut potentiel ne se résume pas à un QI. C’est notamment, un fonctionnement intellectuel différent et une hypersensibilité exacerbés.',
       
       enseignement_bilingue:'L\'informatique, un atout du présent et du futur...',
@@ -495,7 +500,7 @@ app.config(function($translateProvider) {
       text_image_accueil_bas2:'APPRENANTS EN COURS D\'INFORMATIQUE',
       text_image_accueil_bas3:'SOUTENANCE',
  
-      evenement_a_venir:'évènements à venir au CFAP',
+      evenement_a_venir:'Les départements disponibles',
       
       evenement_a_venir_date1:'JUIN 2017',
       evenement_a_venir_text1:'Spécial vacances',
@@ -634,7 +639,7 @@ app.config(function($translateProvider) {
       
        /************** DEBUT PAGE  ANGLAIS  ******************/
       titre_anglais1:'Formation linguistique',
-      titre_anglais2:'COURS D\'ANGLAIS',
+      titre_anglais2:'BIOLOGIE DES ORGANISMES VEGETAUX',
       titre_anglais3:'Élèves, Étudiants, Entreprises... Grand public',
       maternelle_titre:'La langue anglaise, je dois absolument la',
       
@@ -748,6 +753,7 @@ app.config(function($translateProvider) {
        contact_boite_postale:'Boîte postale',
        contact_boite_postale1:'BP :',
        contact_boite_postale2:'Douala - Cameroun',
+       contact_boite_postale3:'TEL / FAX :',
       
        contact_telephone:'Téléphone',
        contact_telephone1:'675 68 67 26',

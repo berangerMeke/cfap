@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>RELIANCE EDUCAIVE</title>
+<title>FS</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -48,8 +48,8 @@
 <script src="js/modernizr.js"></script><!-- Modernizr -->    
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
-    
 </head>
+	
 <body class="home" ng-app="gaeaApp" ng-controller="homeCtrl">
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -60,19 +60,28 @@
 	<header class="site-header">
     	
             <div class="row" style="margin-left:0%;margin-right:0%;margin-top:0.5%"> 
-                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:center; padding-top:14px;padding-bottom:13px;color:#fff;font-size:200%; border-radius:5px 0px 0px 0px;">
-                    <b>
-                       <i>CFAP</i> 
-                    </b>    
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4) repeat;text-align:center; padding-top:14px;padding-bottom:13px;color:#fff;font-size:100%; border-radius:5px 0px 0px 0px;">
+					<img src="images/logo/logo.jpg" alt="" style="width:30px">&nbsp;&nbsp;
+                    <strong>
+                       <i style="font-size: 120%"> {{ 'statique_title' | translate }}</i> 
+                    </strong>    
                 </div>
-                 <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4.jpg) repeat;text-align:center; padding-top:11px;padding-bottom:10px;">   
+                 <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4) repeat;text-align:center; padding-top:11px;padding-bottom:24px;">   
            
-                        <marquee class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid green;font-size:120%;"> Cours d'anglais début de la prochaine session <span style="color:red"> 08 / 04 / 2017</span></marquee>        
+                        <marquee class="col-md-12 col-sm-12" style="background:#fff;text-align:center; width:100%;color:green;border-radius:20px; border:3px solid green;font-size:120%;"> Réprise des cours à l'université de Douala au compte du 2nd semestre le <span style="color:red"> 03 / 01 / 2019</span></marquee>         
                 </div>
-                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back.jpg) repeat;text-align:right; padding-top:1%;padding-bottom:1%; border-radius:0px 5px 0px 0px;">
+                <div class="col-md-4 col-sm-4" style="background:url(images/patterns/back4) repeat;text-align:right; padding-top:1%;padding-bottom:26px; border-radius:0px 5px 0px 0px;">
+					<span ng-show="langueAn">
                         <a href="#" ng-click="changeLanguage('en')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
                          &nbsp; Read us in : <strong>English</strong>   
-                        </a>    
+                        </a>
+					</span>
+					<span ng-show="langueFr">
+                        <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;"><img src="images/drapeau/cm.png" width="7.5%"> 
+                         &nbsp; Lisez-nous en : <strong>Français</strong>   
+                        </a>
+					</span>
+						
                      <!--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#" ng-click="changeLanguage('fr')" style="padding-right:3%;color:#fff;font-size:100%;text-decoration:none;">Français  :
                             &nbsp;<img src="images/drapeau/fran.png" width="6.5%">
@@ -93,41 +102,48 @@
              	<div class="container for-navi">
              	<h1 class="logo" style="margin-left:0%;">
                     <a href="" class="btn_sincrire_intro ">
-                                <img src="images/logo/logo.png" alt="" style="width:20%">
+                                <img src="images/logo/logoFS.png" alt="" style="width:20%">
                     </a>
                      &nbsp;
-                    <img src="images/logo/textlogo.png" alt="" style="width:70%">
+					<i style="font-size: 70%">{{ 'statique_title2' | translate }}</i>
              	</h1>
                 
               	<!-- Main Navigation MENU-->
               	<nav class="main-navigation">
                   	<ul class="sf-menu">
                         <li><a href="index.html">{{ 'home' | translate }}</a></li>
-      					<li><a href="">{{ 'institution' | translate }}</a></li>
                           <li><a href="">{{ 'school' | translate }}</a>
                             <ul>
                                 <li><a href="">{{ 'langue' | translate }}</a>
                                     <ul>
-                                        <li><a href="anglais.html">{{ 'anglais' | translate }}</a></li>
-                                        <li><a href="">{{ 'francais' | translate }}</a></li>
-                                        <li><a href="">{{ 'italien' | translate }}</a></li>
-                                        <li><a href="">{{ 'allemand' | translate }}</a></li>
+                                        <li><a href="biologie_vegetale.html">{{ 'anglais' | translate }}</a></li>
+                                        <li><a href="biologie_animale.html">{{ 'francais' | translate }}</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="resultats-examen.html">{{ 'informatique_menu' | translate }}</a>
-                                     <ul>
-                                        <li><a href="omo.html">{{ 'omo' | translate }}</a></li>
-                                        <li><a href="ts.html">{{ 'ts' | translate }}</a></li>
-                                        <li><a href="iag.html">{{ 'iag' | translate }}</a></li> 
-                                    </ul>
+                                <li><a href="maths_info.html">{{ 'informatique_menu' | translate }}</a>
                                 </li> 
-                                <li><a href="infographie.html">{{ 'info' | translate }}</a></li>
-                                <li><a href="formation_pro.html">{{ 'professionnelle' | translate }}</a></li>                                
-                                <!--<li><a href="activite-extra-scolaire.html">{{ 'activites_extra_scolaires' | translate }}</a></li>
-                                <li><a href="">{{ 'association' | translate }}</a></li>-->
+                                <li><a href="geosciences.html">{{ 'info' | translate }}</a></li>
+                                <li><a href="physique.html">{{ 'professionnelle' | translate }}</a></li>               
+                                <li><a href="Chimie.html">{{ 'association' | translate }}</a></li>
                             </ul>
                         </li>
-                         <li><a href="">{{ 'admission' | translate }}</a></li>
+                         <li><a href="">{{ 'institution' | translate }}</a>
+							 <ul>
+                                <li><a href="http://www.systhag-online.cm:8080/SYSTHAG-ONLINE/faces/etudiants/preInscription.xhtml">{{ 'preinscription' | translate }}</a></li>
+                                <li><a href="http://facsciences-online.cm/login.php">{{ 'school_project' | translate }}</a></li>               
+                                <li><a href="http://facsciences-online.cm/is/index.php">{{ 'educatif_project' | translate }}</a></li>
+                            </ul>
+						 </li>
+                         <li><a href="">{{ 'recherche' | translate }}</a>
+							<ul>
+                                <li><a href="">{{ 'recherche1' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche2' | translate }}</a></li> 
+                                <li><a href="">{{ 'recherche3' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche4' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche5' | translate }}</a></li>
+                                <li><a href="">{{ 'recherche6' | translate }}</a></li>
+                            </ul>					
+						 </li>
                         <li><a href="contact2.html">{{ 'contact' | translate }}</a></li>
                     </ul>
                 </nav>
@@ -136,6 +152,9 @@
             </div>
         </div>
         
+		</div>
+			
+			
 	</header>
         
         
@@ -159,7 +178,7 @@
         	<div class="row" style="text-align:center;">
                         <div class="col-md-2">
                         </div>
-                        <div class="col-md-8" style="color:forestgreen;font-size:130%;">
+                        <div class="col-md-8" style="color:hotpink;font-size:130%;">
                            <strong>{{ 'contact' | translate }}</strong>
                         </div>
                         <div class="col-md-2">
@@ -254,29 +273,33 @@
                         	<h3 class="title"> <img src="images/maker.png" alt="" width="15%"> {{ 'contact_localisation1' | translate }}</h3>
                             <address>
                             	Douala - Cameroun<br>
-                                Situé à " entrée Laïc " face pharmacie PK8<br>
+                                Situé à côté de l'INSET et de l'IUT<br>
                             </address>
                        	</div>
                         </br>
                     	<div class="widget sidebar-widget text_widget">
                         	<h3 class="title"><img src="images/BP.png" alt="" width="15%"> {{ 'contact_boite_postale' | translate }}</h3>
                             <address>
-                            	{{ 'contact_boite_postale1' | translate }} <br>
-                                Douala - Cameroun<br>
+                            	{{ 'contact_boite_postale1' | translate }} 
+                                24157 Douala - Cameroun<br>
+                            </address>
+							<address>
+                            	{{ 'contact_boite_postale3' | translate }} 
+                                233 40 75 69<br>
                             </address>
                        	</div>
                         </br>
                     	<div class="widget sidebar-widget text_widget">
                         	<h3 class="title"><img src="images/tel2.png" alt="" width="15%"> {{ 'contact_telephone' | translate }}</h3>
-                            <address>
-                            	6 77 78 89 17
+                            <address style="font-size: 90%">
+                            	694 45 44 11 - 697 44 99 91 - 697 44 99 89 - 697 45 00 58
                             </address>
                        	</div>
                         </br>
                         <div class="widget sidebar-widget text_widget">
                         	<h3 class="title"><img src="images/email.png" alt="" width="16%"> {{ 'contact_email' | translate }}</h3>
                             <address>
-                            	mail@gmail.com<br>
+                            	facsciences.douala@gmail.com<br>
                             </address>
                        	</div>
                     </div>
@@ -285,11 +308,19 @@
 
 
  </br></br></br>
+
+
+
+
+
+
+
+
   </br></br></br></br>
 
-    <div class="row" style="font-size:120%;background-image:url(images/patterns/back.jpg);border-radius:0px;color:#fff;text-align:center;height:25px;">
+  <div class="row" style="font-size:120%;background: gray;border-radius:0px;color:#fff;text-align:center;height:25px;">
           <div class="col-md-12 col-sm-12 col-xs-12 ">  
-              <span style="font-size:120%;">Le CFAP est situé à " Entrée Laïc " face pharmacie PK8 | Tél : 6 77 78 89 17</span> 
+              <span style="font-size:100%;">TPE || Thème : conception du site web de la faculté des sciences de l'univerté de Daoula</span> 
           </div>
     </div>
 
@@ -298,7 +329,7 @@
     	<div class="container">
         	<div class="row">
             	<div class="col-md-12 col-sm-12">
-                	<p>&copy; {{ 'dev1' | translate }} MEKE Béranger | mekebranger@yahoo.fr | (+237) 670 06 38 58 | {{ 'dev2' | translate }}</p>
+                	<p>&copy; {{ 'dev1' | translate }} le groupe de TPE N°2 | Programmation web |Niveau 1|Sous-département Informatique|Sémestre 1 / 2018-2019 | {{ 'dev2' | translate }}</p>
                 </div>
             	
             </div>
@@ -318,7 +349,7 @@
     
      
 </div>
-<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>--> <!-- Jquery Library Call -->
+
 <script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
 <script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
 <script src="js/bootstrap.js"></script> <!-- UI -->
@@ -349,13 +380,14 @@
     $(document).ready(function(){
       map = new GMaps({
         el: '#map',
-        lat: 4.0460204 ,
-        lng: 9.753264099999999
+        lat: 4.0565 ,
+        lng: 9.745506400000068,
+		zoom:17
       });
       map.addMarker({
-        lat: 4.0457,
-        lng: 9.75326409999999,
-        title: 'CFAP',
+        lat: 4.0557987,
+        lng: 9.744, 
+        title: 'Faculté des sciences',
         details: {
           database_id: 42,
           author: 'HPNeo'
@@ -363,7 +395,6 @@
         click: function(e){
           if(console.log)
             console.log(e);
-          /* alert('AE3D se trouve ici'); */
         },
         mouseover: function(e){
           if(console.log)
@@ -373,39 +404,7 @@
     });
   </script>    
     
-    
-    
-
-<!-- Pour l'envoie du email-->   
-<script>
-$(document).ready(function(){
-    var from,to,subject,text;
-    $("#send_email").click(function(){     
-        to=$("#to").val();
-        subject="Nom: "+$("#name").val()+"____"+" Email: "+$("#email").val()+"____"+"Tél: "+$("#phone").val();
-        text=$("#content2").val();
-        $("#message").text("Sending E-mail...Please wait");
-        $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
-        if(data=="sent")
-        {
-            $("#message").empty().html(" Email is been sent at "+to+" . Please check inbox! ");
- 
-        }
-
-});
      
-        //vider les input
-        document.getElementById('name').value="";
-        document.getElementById('email').value="";
-        document.getElementById('phone').value="";
-        document.getElementById('content2').value="";
-         
-    });
-});
-</script>    
-    
-    
-    
     
 </body>
 </html>

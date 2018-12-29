@@ -1,5 +1,5 @@
 .text-primary, .btn-primary .badge, .btn-link,a.list-group-item.active > .badge,.nav-pills > .active > a > .badge, p.drop-caps:first-child:first-letter, .accent-color, .main-navigation > ul > li > a:hover, .posts-listing .post-time, h3.title .title-border i, .upcoming-events .event-cats a:hover, .nav-np .next:hover, .nav-np .prev:hover, .basic-link, .pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus, .staff-item .meta-data{
-	color:crimson;
+	color:deeppink;
 }
 a:hover{
 	color:forestgreen;
@@ -41,7 +41,7 @@ a.list-group-item.active,
 a.list-group-item.active:hover,
 a.list-group-item.active:focus, .accordion-heading .accordion-toggle.active, .accordion-heading:hover .accordion-toggle.active, .accordion-heading:hover .accordion-toggle.inactive,
 .panel-primary > .panel-heading, .carousel-indicators .active, .flex-control-nav a:hover, .flex-control-nav a.flex-active, .media-box .media-box-wrapper, .top-menu li a, .upcoming-events .event-date, .media-box .zoom, .media-box .expand, .project-overlay .project-cat, .flexslider .flex-prev:hover, .flexslider .flex-next:hover, .events-listing .upcoming-events li:hover .event-details-btn:hover, .single-event-info .icon-s, .event-register-block:hover, .fc-event, .projects-grid .project-cat, .tag-cloud a:hover, .main-navigation > ul > li ul{
-  background-color:forestgreen;
+  background-color:dodgerblue;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -74,7 +74,7 @@ a.list-group-item.active:focus,
 	border-top-color:forestgreen;
 }
 .panel-primary > .panel-footer + .panel-collapse .panel-body, .nav-tabs li a:active, .nav-tabs li.active a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .title .title-border{
-	border-bottom-color:forestgreen;
+	border-bottom-color:dodgerblue;
 }
 blockquote{
 	border-left-color:forestgreen;

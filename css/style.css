@@ -1219,7 +1219,8 @@ h1.logo{
 .main-navigation > ul > li > a{
 	display:block;
 	/*color:#555555;*/
-    color: crimson;
+    /*color: crimson;*/
+	color: deeppink;
 	padding:0 12px;
 	line-height:75px;
 }
@@ -1309,7 +1310,7 @@ h1.logo{
 }
 .main-navigation > ul > li > ul > li > a:hover{
 	text-decoration:none;
-	background-color:rgba(0,0,0,.05)
+	background-color:blue
 }
 .main-navigation > ul > li > ul li:last-child a{
 	border-bottom:0;
@@ -1595,7 +1596,7 @@ h1.logo{
 	position: absolute;
 	content: " ";
 	width: 3px;
-	background-color: #eceae4;
+	background-color: blue;
 	left: 50%;
 	margin-left: -1.5px;
 }
@@ -2010,7 +2011,8 @@ h1.logo{
 	background-image:url(../images/wave-high.png);
 	background-repeat: repeat-x;
 	/*background-color:#2f2f2f;*/
-	background-color:forestgreen;
+	/*background-color:forestgreen;*/
+	background-color:blue;
 	padding:40px 0;
 }
 .site-bottom-footer{
