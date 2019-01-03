@@ -19,48 +19,72 @@ app.config(function($translateProvider) {
     
     /*MENU */
     home: 'HOME',
-    institution: 'PROJECT OF SCHOOL',
-        /*sous menu-institution*/
-            presentation:'Presentation',
-            school_project:'Project of school',
-            educatif_project:'Educatif project',    
-    school: 'SCHOOL LIFE',
-        /*sous menu-school*/
-            langue:'Education cycle',
-                    nursly:'Nursery',
-                    primary:'Primary',
-            pedagogy:'Pedagogy',
-            professionnelle:'Rules of procedure',
-                    rythme_scolaire:'School year',
-                    association:'Association',
-                    activites_extra_scolaires:'Extra-curricular activities',
-            informatique:'Informatique',
-    admission: 'ADMISSION',
-                    reglement_interieur:'Rules of procedure',
+       institution: 'SCHOOLING',
+      /*sous menu-institution*/
+            preinscription:'preregistration',
+            school_project:'Administrative registration',
+            educatif_project:'Accademic registration',
+	 recherche: 'RESEARCH',
+      /*sous menu-institution*/
+            recherche1:'Doctoral Training Unit',
+            recherche2:'Research Laboratory',
+            recherche3:'Research Team',
+            recherche4:'Theses & HDR supported',
+            recherche5:'Publications',
+            recherche6:'Doctoral registration / PhD',
+     school: 'DEPARTEMENT',
+            /*sous menu-school*/
+            langue:'Biology',
+                anglais:'Biology of plant organisms',
+                francais:'Biology of animal organisms',
+                italien:'Italien',
+                allemand:'Allemand',
+            informatique_menu:'Mathematics & Computer Science',
+                omo:'Mathematics',
+                ts:'Informatique',
+            info:'Geosciences',
+            professionnelle:'Physical',
+            association:'Chemistry',
+    admission: 'SUIVI POST-FORMATION',
+                    reglement_interieur:'Règlement intérieur',
     contact: 'CONTACT',
     
     /************** FIN DE LA NAVBAR ****************/  
     
-       
-      
-    /************** DEBUT DU HOME SLIDE ****************/
+   
+     
+	  /************** DEBUT DU HOME SLIDE ****************/
         big_text_slide1:'FACULTY OF SCIENCE',
         smallTextSlide1:'University of Douala',
       
-        big_text_slide2:'Practical',
-        small_text_slide2:'computer courses',
+        big_text_slide2:'computer',
+        small_text_slide2:'Lab...',
       
-        big_text_slide3:'The early child',
-        small_text_slide3:'To study is to discover... ', 
-    /************** FIN DU HOME SLIDE ****************/ 
-      
-     
+        big_text_slide3:'laboratories',
+        small_text_slide3:'Chemistry - Biochemistry - Biology - Geoscience',
+	  
+	  	big_text_slide4:'Development',
+        small_text_slide4:'Mathematics - Physics',
+	  
+	  	big_text_slide5:'Etudiands',
+        small_text_slide5:'in amphitheater',
+	  
+	  	big_text_slide6:'Etudiandes',
+        small_text_slide6:'in front of the barbillard',
+    /************** FIN DU HOME SLIDE ****************/  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
       
     /************** DEBUT PAGE  ACCUEIL  ******************/
      
       presentation:'Presentation',
       centre_formation:'BILINGUAL SCHOOL COMPLEX',
-      complexe_scolaire_minus:'bilingual school complex',
+      complexe_scolaire_minus:'Faculty of science',
       
       initiation:'Theoretical and practical introduction to computer science',
       reussite_epanouissement_mérite:'Success, fulfillment, merit, listening, are part of our keywords.',
@@ -70,9 +94,9 @@ app.config(function($translateProvider) {
       texte1:'Welcome to',
       texte2:'Located in Douala-Cameroon, in the district of Douala 4th (Bonabéri) by "Quatre étages" at the place called "Barrière Washington".',
       
-      texte3:'Our school is composed of bilingual nursery and primary cycles (French / English). Founded in 2012, this institution was created to provide quality education in a privileged setting. Girls and boys are welcomed in a family setting. They learn there with serenity while flourishing.',
+      texte3:'University of Douala (UD) is located mainly at CAMPUS II in NDOGBONG next to ENSET and I.U.T. This campus is home to the Deanship, classrooms, laboratories and a theater amphitheater with 100 seats. The Faculty also has an amphitheater on campus I at ESSEC in front of the gymnasium. It also benefits from a few premises at the former Rectorate in Akwa which are home to',
       
-      texte4:'As soon as they enter primary school, students benefit from',
+      texte4:'CEPAMOQ (Center for Molecular Atomic Physics and Quantum Optics). It is also worth mentioning several classrooms and two 500-seat amphitheatres that the Faculty of Sciences shares with the other faculties of the University of Douala at the "Extension" campus in NDOGBONG. The academic year is divided into two (2) semesters each comprising fourteen (14) and sixteen (16) weeks of teaching and assessment.',
       texte5:'Numerous recreational activities are proposed to create a pleasant and friendly climate, as well as a good balance of life.',
       
       texte6:'Essential values to learn better and which are the keys to success for further education. the',
@@ -80,12 +104,12 @@ app.config(function($translateProvider) {
     
       texte8:'If you are looking for a private school for your child to learn in the best conditions, in the city of Douala and in particular Bonabéri, please call us at 675 68 67 26/697 80 50 36/677 32 28 71.',
       
-      apprendre_grandir:'Learning is growing',
+      apprendre_grandir:'Campus activities ...',
       
-      salle_cours:'Salle de cours théorique',
+      salle_cours:'Mastering science ... owning the world',
       enfant_precoce_text:'A child with high potential is more than an IQ. It is in particular, a different intellectual functioning and hypersensitivity exacerbated.',
       
-      enseignement_bilingue:'A bilingual education framework',
+      enseignement_bilingue:'IT, an asset of the present and the future ...',
       enseignement_bilingue_text:'Grace to active pedagogy, from the nursery school to the class 6, children learn English and French with pleasure, supervised by certified and native teachers.',
       
       informatique:'Computer science at the heart of education',
@@ -95,7 +119,7 @@ app.config(function($translateProvider) {
       text_image_accueil_bas2:'PUPILS IN CLASSROOM',
       text_image_accueil_bas3:'PUPILS IN BREAK',
  
-      evenement_a_venir:'Events to come',
+      evenement_a_venir:'Available departments',
       
       evenement_a_venir_date1:'JUNE 2017',
       evenement_a_venir_text1:'ACTIVITIES',
